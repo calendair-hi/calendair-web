@@ -22,7 +22,7 @@ This project is built using **Vanilla Web Technologies** to remain lightweight a
 -   `/faq.html`: FAQ page with deep-linking support.
 -   `/de/`: Root for the German version of the site.
 -   `/assets/`: Shared resources.
-    -   `site.css`: Global styles (responsive, dark mode support).
+    -   `site.css`: Global styles (responsive, pure light mode matching the app).
     -   `site.js`: Shared logic (FAQ toggles, year updates, app view detection).
     -   Images, favicons, and manifests.
 -   `CNAME`: Production domain configuration.
@@ -39,17 +39,26 @@ Pages can be optimized for display inside the CalendAIr mobile app (WebViews) by
 The FAQ page supports opening specific questions via URL:
 -   `faq.html?q=privacy` or `faq.html#privacy` will automatically expand the question with `id="privacy"`.
 
-### 3. SEO & Rich Aesthetics
--   **Typography**: Uses "Inter" via Google Fonts.
--   **Responsive**: Mobile-first design using CSS Grid and Flexbox.
--   **Accessibility**: Semantic HTML and ARIA labels.
+### 3. Pure Premium Light Theme & Core Brand Colors
+The site uses a strict **Light Theme** matching the Flutter app's visual identity:
+*   **Vibrant Teal (`#00A3A5`)**: The primary brand and action color.
+*   **Electric Purple (`#9B59FF`)**: Secondary brand accent, combined with Teal in the primary gradient.
+*   **Dark Navy (`#2C2C38`)**: Primary text color for high contrast and readability.
+*   **Grey Light (`#F5F5F5`) & Soft Grey (`#EDEDED`)**: Neutral backgrounds and borders.
+*   **White (`#FFFFFF`)**: Primary page canvas background.
+
+### 4. Interactive Phone Mockup & Screenshot Placement
+-   The hero section features a modern, clean charcoal-bezel smartphone mockup.
+-   It is configured to display `/assets/screenshot-placeholder.png` directly via an `<img class="app-screenshot">` tag.
+-   If `screenshot-placeholder.png` is not present, it hides itself gracefully via an `onerror="this.style.display='none';"` handler, showing a beautifully animated mockup of the conversational app dashboard as a fallback.
 
 ## 📜 Guidelines for Agents
 1.  **Keep it Simple**: Prioritize readability and standard HTML/CSS.
 2.  **Maintain Language Parity**: If you update `index.html` (EN), check if `/de/index.html` needs a corresponding update.
-3.  **No Placeholders**: Use meaningful content. For images, use the `generate_image` tool if replacements are needed.
-4.  **Verification**: Always check that any new CSS doesn't break the "App View" mode (`.is-app`).
-5.  **SEO**: Ensure every page has a unique `<title>` and `<meta description>`.
+3.  **Strict Light Theme**: Do not introduce dark mode style overrides. The layout must remain pure, high-contrast light to match the mobile app.
+4.  **No Badge Borders/Backgrounds**: Do not apply background colors, margins, paddings, or border outlines directly to the `.store-badge` element, as the App Store and Google Play SVG assets already contain native borders and black capsules.
+5.  **Verification**: Always check that any new CSS doesn't break the "App View" mode (`.is-app`).
+6.  **SEO**: Ensure every page has a unique `<title>` and `<meta description>`.
 
 ---
 *Created by Antigravity AI*

@@ -33,9 +33,17 @@ function applyAppView() {
   }
 }
 
+function setGoogleCalendarDate() {
+  const today = new Date().getDate();
+  document.querySelectorAll(".google-cal-date").forEach((el) => {
+    el.textContent = today;
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   applyAppView();
   setCurrentYear();
+  setGoogleCalendarDate();
   openFaqFromLocation();
   enhanceFaqLinks();
 });
