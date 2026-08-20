@@ -840,7 +840,8 @@ footer {
 
 .footer-logo-img {
   width: 100%;
-  max-width: 524px; /* Prominent desktop width (equivalent to 140px height) */
+  max-width: 524px;
+  /* Prominent desktop width (equivalent to 140px height) */
   height: auto;
   display: block;
   transition: max-width var(--transition-normal);
@@ -1044,6 +1045,7 @@ footer {
   }
 
   .footer-logo-img {
-    max-width: 260px; /* Elegant, readable size on mobile that never overflows the viewport */
+    max-width: 260px;
+    /* Elegant, readable size on mobile that never overflows the viewport */
   }
 }
