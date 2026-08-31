@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "SML2KY4XS5.com.calendair.calendair.app",
+        "paths": ["/invite", "/invite/", "/invite/*"]
+      }
+    ]
+  }
+}

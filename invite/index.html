@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You're invited to CalendAIr</title>
+  <meta name="description" content="Install CalendAIr and use your invite code to connect with a friend.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/css/flag-icons.min.css">
+  <link rel="stylesheet" href="/assets/site.css">
+  <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="CalendAIr" />
+  <link rel="manifest" href="/assets/site.webmanifest" />
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <a href="/" class="logo">
+        <img src="/assets/logo_without_slogan.svg" alt="CalendAIr Logo" class="nav-logo-img">
+      </a>
+      <div class="nav-links">
+        <a href="/#how-it-works">How It Works</a>
+        <a href="/#features">Features</a>
+        <a href="/faq.html">FAQ</a>
+      </div>
+      <div class="nav-actions">
+        <nav class="lang-switcher" aria-label="Language switcher">
+          <a class="is-active" data-invite-path="/invite/" href="/invite/"><span class="fi fi-gb"></span>EN</a>
+          <a data-invite-path="/de/invite/" href="/de/invite/"><span class="fi fi-de"></span>DE</a>
+        </nav>
+        <a href="/#download" class="btn btn-primary">Download</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="invite-main">
+    <div class="container invite-wrap">
+      <section class="invite-card" id="invite-ok" hidden>
+        <h1>You're invited to <span class="gradient-text">CalendAIr</span></h1>
+        <p class="invite-from" id="invite-from" data-from-template="{from} wants to connect with you." hidden></p>
+        <div class="invite-code-block">
+          <span class="invite-code-label">Invite code</span>
+          <p class="invite-code" id="invite-code"></p>
+        </div>
+        <p class="invite-body">Install CalendAIr, then tap this link again — or enter the code in the app.</p>
+        <div class="store-badges invite-stores" id="download">
+          <a class="store-badge" data-store="ios" href="https://apps.apple.com/app/id6755298945" target="_blank"
+            rel="noopener">
+            <img src="/assets/apple-store-en.svg" alt="Download on the App Store">
+          </a>
+          <a class="store-badge" data-store="android"
+            href="https://play.google.com/store/apps/details?id=com.calendair.calendair_app" target="_blank"
+            rel="noopener">
+            <img src="/assets/play-store-en.svg" alt="Get it on Google Play">
+          </a>
+        </div>
+        <p class="store-note">After installing, tap the same chat link again, or enter the code in Friends → Connect.</p>
+      </section>
+
+      <section class="invite-card" id="invite-missing" hidden>
+        <h1>This invite link is incomplete</h1>
+        <p class="invite-body">This link is missing an invite code. Ask your friend to send the invite again, or go back
+          to the homepage.</p>
+        <div class="invite-missing-actions">
+          <a class="btn btn-primary" href="/">Go to homepage</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="logo">
+            <img src="/assets/logo-with-slogan.svg" alt="CalendAIr Logo" class="footer-logo-img">
+          </a>
+          <p>Plan Less. Meet More. End-to-end secure, GDPR-proof AI calendar coordination.</p>
+        </div>
+        <div class="footer-links">
+          <strong>Legal & Compliance</strong>
+          <a href="/privacy-policy.html">Privacy Policy</a>
+          <a href="/terms-and-services.html">Terms of Service</a>
+          <a href="/imprint.html">Imprint</a>
+          <a href="/faq.html">Detailed FAQ</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-current-year></span> CalendAIr. All rights reserved.</span>
+        <nav class="lang-switcher" aria-label="Language switcher bottom">
+          <a class="is-active" data-invite-path="/invite/" href="/invite/"><span class="fi fi-gb"></span>EN</a>
+          <a data-invite-path="/de/invite/" href="/de/invite/"><span class="fi fi-de"></span>DE</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/site.js"></script>
+  <script src="/assets/invite.js"></script>
+</body>
+
+</html>

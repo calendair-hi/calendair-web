@@ -50,6 +50,10 @@
   box-sizing: border-box;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -1047,5 +1051,108 @@ footer {
   .footer-logo-img {
     max-width: 260px;
     /* Elegant, readable size on mobile that never overflows the viewport */
+  }
+}
+
+/* Invite landing (/invite and /de/invite) */
+.invite-main {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 3rem 0 4rem;
+  background: radial-gradient(circle at 12% 18%, var(--accent-glow) 0%, transparent 45%);
+}
+
+.invite-wrap {
+  width: 100%;
+}
+
+.invite-card {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: 3rem 2.5rem;
+}
+
+.invite-card h1 {
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  letter-spacing: -0.025em;
+  margin-bottom: 0.75rem;
+}
+
+.invite-from {
+  color: var(--text);
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin: 0 0 1.75rem;
+}
+
+.invite-code-block {
+  margin: 0 auto 1.75rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+.invite-code-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.invite-code {
+  margin: 0;
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  line-height: 1.2;
+  color: var(--text);
+  word-break: break-all;
+}
+
+.invite-body {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  margin: 0 auto 2rem;
+  max-width: 46ch;
+}
+
+.invite-stores {
+  justify-content: center;
+}
+
+.invite-card .store-note {
+  margin-top: 0.25rem;
+}
+
+.invite-missing-actions {
+  margin-top: 1.5rem;
+}
+
+.is-app .invite-main {
+  padding: 1.5rem 0;
+  background: transparent;
+}
+
+.is-app .invite-card {
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  max-width: 100%;
+}
+
+@media (max-width: 640px) {
+  .invite-card {
+    padding: 2rem 1.25rem;
   }
 }

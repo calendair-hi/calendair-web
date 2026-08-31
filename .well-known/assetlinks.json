@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.calendair.calendair_app",
+      "sha256_cert_fingerprints": [
+        "18:04:9A:4A:27:69:73:DC:FE:82:69:E4:6D:51:70:75:3E:99:F4:2C:8F:15:AB:B8:1F:AA:27:1B:AD:3E:FF:78"
+      ]
+    }
+  }
+]
