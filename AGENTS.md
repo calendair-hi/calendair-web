@@ -59,6 +59,11 @@ The site uses a strict **Light Theme** matching the Flutter app's visual identit
 4.  **No Badge Borders/Backgrounds**: Do not apply background colors, margins, paddings, or border outlines directly to the `.store-badge` element, as the App Store and Google Play SVG assets already contain native borders and black capsules.
 5.  **Verification**: Always check that any new CSS doesn't break the "App View" mode (`.is-app`).
 6.  **SEO**: Ensure every page has a unique `<title>` and `<meta description>`.
+7.  **No third-party assets**: Fonts, icons, scripts and styles are served from our own domain.
+    Do **not** add `fonts.googleapis.com`, `jsdelivr`, `cdnjs`, `unpkg` or any other CDN link —
+    an external asset sends every visitor's IP to that provider before consent, and the privacy
+    policy states that the site embeds no third-party content. Inter lives in
+    `/assets/fonts/` (see its README), the two language-switcher flags in `/assets/flags/`.
 
 ---
 *Created by Antigravity AI*

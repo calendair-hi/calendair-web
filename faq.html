@@ -5,10 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FAQ | CalendAIr</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/css/flag-icons.min.css">
+  <link rel="stylesheet" href="/assets/fonts.css">
   <link rel="stylesheet" href="/assets/site.css">
   <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
@@ -55,9 +52,11 @@
       <details id="access-to-calendar">
         <summary>Does the AI have access to my calendar?</summary>
         <div class="faq-answer">
-          <p>No, the AI does not have access to your calendar. The AI in CalendAIr just helps with the prompts. Finding
-            free slots with your friends is done by the CalendAIr app. The data from your calendar is not stored in our
-            database.</p>
+          <p>No. The AI only interprets the text you type (for example &ldquo;friday afternoon next week&rdquo;) and turns
+            it into time windows &mdash; it never receives your calendar. Finding the free slots is done by CalendAIr
+            itself, using only the free/busy times of your existing events. We do not store the titles, notes, locations
+            or attendee lists of those events. Meetings you create in CalendAIr are stored, because we have to show them
+            to the people you invite and write them to your calendar.</p>
         </div>
       </details>
       <details id="connect-friends">
@@ -71,26 +70,31 @@
       <details id="is-free">
         <summary>Is the app free?</summary>
         <div class="faq-answer">
-          <p>Your first 20 prompts are free. After using them up you have the opportunity to buy an unlimited amount of
-            prompts for the next 30 days for XY €.</p>
+          <p>Yes, CalendAIr is free to use. As a free user you get 20 prompts per month, one connected calendar and one
+            invitee per meeting, and the app shows ads. Premium removes the prompt limit and raises the calendar and
+            invitee limits. The current price and duration are shown in the App Store or Google Play before you buy.</p>
         </div>
       </details>
       <details id="free-prompts-meaning">
         <summary>What do 20 free prompts mean?</summary>
         <div class="faq-answer">
-          <p>As a free user you get to 20 free prompts, after that you can purchase an unlimited amount of prompts.</p>
+          <p>Every prompt is one request you send to CalendAIr to find a slot. Free users get 20 per month; with Premium
+            there is no prompt limit.</p>
         </div>
       </details>
       <details id="prompt-limit-reset">
         <summary>When will the prompt limit be reset?</summary>
         <div class="faq-answer">
-          <p>The prompt limit will be reset after 30 days. You will than have 20 new prompts.</p>
+          <p>The prompt limit resets every 30 days. You then have 20 new prompts.</p>
+
         </div>
       </details>
       <details id="delete-profile">
         <summary>How can I delete my profile?</summary>
         <div class="faq-answer">
-          <p>We are sad to see you go! Your profile can be deleted on your profile page. Please remember two things:
+          <p>We are sad to see you go! Your profile can be deleted on your profile page, and you can also request
+            deletion without the app via <a href="/delete-account.html">Delete your account</a>. Please remember two
+            things:
             Meetings with your friends, that are already in your calendar, won’t be removed from your calendar by
             deleting your account. We also don’t have access to your Android or Apple subscriptions. If you have a
             premium account you have to end your subscription in your phone settings.</p>
@@ -107,8 +111,8 @@
       <details id="premium-features">
         <summary>What's included in the premium subscription?</summary>
         <div class="faq-answer">
-          <p>Currently the premium subscription includes an unlimited amount of prompts to create as many meetings with
-            your friends as you like.</p>
+          <p>Premium removes the monthly prompt limit, lets you connect more calendars and invite more people to a
+            meeting, and removes the ads. The limits that apply are shown in the app.</p>
         </div>
       </details>
       <details id="manage-calendar">

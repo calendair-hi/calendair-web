@@ -5,10 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy | CalendAIr</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/css/flag-icons.min.css">
+  <meta name="description" content="How CalendAIr processes personal data, including calendar access, Google Limited Use, and your GDPR rights.">
+  <link rel="stylesheet" href="/assets/fonts.css">
   <link rel="stylesheet" href="/assets/site.css">
   <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
@@ -20,7 +18,7 @@
 
 <body>
   <main class="page">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;">
+    <div class="page-head">
       <div>
         <div class="breadcrumbs">
           <a href="/">Home</a>
@@ -35,95 +33,154 @@
       </nav>
     </div>
 
-    <section>
-      <p><strong>CalendAIr needs access to your Google, Outlook or Apple calendar so that the app can check when you are
-          free or busy and generate smart meeting time suggestions.</strong></p>
+    <section class="legal">
+      <p class="legal-meta"><strong>Last updated: <time datetime="2026-09-06">6 September 2026</time></strong></p>
 
-      <p>When you grant permission, the app accesses your calendar through the respective service APIs:</p>
+      <p>This policy explains how <strong>CalendAIr H.I. UG (haftungsbeschränkt)</strong> (“CalendAIr”, “we”, “us”) processes personal data when you use the CalendAIr mobile app and the website <a href="https://calendair.de">calendair.de</a>.</p>
+      <p>It is not legal advice. If anything here conflicts with mandatory law, the law prevails.</p>
+
+      <h2 id="controller">1. Controller</h2>
+      <address>
+        CalendAIr H.I. UG (haftungsbeschränkt)<br>
+        Fährstraße 217<br>
+        40221 Düsseldorf<br>
+        Germany
+      </address>
+      <p>Email: <a href="mailto:info@calendair.de">info@calendair.de</a></p>
+
+      <h2 id="what-the-app-does">2. What the app does</h2>
+      <p>CalendAIr helps people find meeting times that work for everyone. You sign in, connect calendars, invite others, and create meetings. Optional features include AI-assisted time suggestions, push notifications, in-app purchases, and (if you consent) analytics and ads.</p>
+
+      <h2 id="calendar">3. How we use your calendar</h2>
+      <p>This is the core of the product. Please read it before you connect a calendar.</p>
+      <p>When you connect Google Calendar, Outlook, or iCloud Calendar, <strong>our servers</strong> call that provider’s API. We do <strong>not</strong> use the iOS EventKit permission or the Android system calendar permission.</p>
+
+      <h3>Existing events already in your calendar</h3>
       <ul>
-        <li>Apple EventKit (iOS)</li>
-        <li>Outlook (Microsoft Graph API)</li>
-        <li>Google Calendar API (Android & Google Accounts)</li>
+        <li>We request event data so we can tell when you are busy (start and end time, and whether an event is cancelled, marked free, or declined by you).</li>
+        <li>We do <strong>not</strong> save the titles, descriptions, locations, or attendee lists of those existing events in our databases.</li>
+        <li>We do <strong>not</strong> show that existing event content to other CalendAIr users or to advertising partners.</li>
+        <li>That data is processed in memory on our servers for the availability request and then discarded (operational logs may still contain technical errors; they are not used to reconstruct your existing calendar).</li>
       </ul>
 
-      <p>For technical reasons, the app loads event object metadata, which may include the following fields: ID,
-        ICalUID, Title, Description, StartTime, EndTime, Location, Status, Transparency, and Attendees.</p>
-
-      <p><strong>Crucially, we exclusively process and use only the free/busy information from this data to calculate
-          suitable meeting times.</strong> We explicitly do not use the content of event titles, descriptions,
-        attendees, or locations for our core functionality.</p>
-
-      <h2>Data We Store on Our Servers</h2>
-      <p>We do not store any sensitive calendar content. Temporary free/busy data may be processed in-memory for
-        suggestion generation but is not persisted. The data we <em>do</em> store includes:</p>
+      <h3>Meetings you create in CalendAIr</h3>
       <ul>
-        <li><strong>User Profiles and Meeting Records:</strong> Basic account information and the meetings you create
-          within the app.</li>
-        <li><strong>Calendar Metadata:</strong> The name and status (e.g., 'Primary' calendar) of your selected
-          calendars.</li>
-        <li><strong>Secure Access Tokens:</strong> Encrypted refresh tokens (for Google and Outlook) or equivalent
-          access credentials (for Apple) are stored to maintain the connection to your calendars. These tokens can be
-          revoked by you at any time in your respective Google or Outlook account settings, or by disconnecting your
-          calendar in the app.</li>
+        <li>We store the title, description, times, and the people you invite.</li>
+        <li>Invitees see that information in the app. Push notifications may include the meeting title and names.</li>
+        <li>When a meeting is accepted, we <strong>write</strong> title, description, times, and attendee emails into the connected calendars so everyone has the event in Google, Outlook, or iCloud.</li>
       </ul>
 
-      <h2>What We Do Not Store or Share</h2>
-      <p>We explicitly do not store, share, or make visible to any user or employee:</p>
+      <h3>Google Contacts (only if you connect Google Calendar)</h3>
       <ul>
-        <li>Event titles</li>
-        <li>Descriptions or notes</li>
-        <li>Attendee lists</li>
-        <li>Locations</li>
-        <li>Reminders or attachments</li>
-        <li>Any other event content</li>
+        <li>We may look up or create a contact (email and display name) in a group named “CalendAIr Connections”.</li>
+        <li>Purpose: so calendar invitations from CalendAIr are less likely to be treated as unknown sender / spam.</li>
+        <li>We do not use your contacts for advertising.</li>
       </ul>
 
-      <h2>Purpose of Processing</h2>
-      <p>We use your free/busy data solely to:</p>
+      <h3>Tokens and credentials</h3>
       <ul>
-        <li>Detect when you are available.</li>
-        <li>Generate meeting time suggestions for you and the people you invite.</li>
+        <li><strong>Google and Outlook:</strong> we store encrypted refresh tokens so we can keep the calendar connected.</li>
+        <li><strong>iCloud:</strong> we store encrypted credentials needed for CalDAV access (Apple ID username plus the app-specific password you enter).</li>
+        <li>You can disconnect in the app at any time. You can also revoke access in your Google or Microsoft account, or delete the app-specific password in your Apple ID settings.</li>
       </ul>
-      <p>This is strictly limited to functionality within the app.</p>
+      <p>Disconnecting a calendar or deleting your CalendAIr account does <strong>not</strong> delete events that were already written to Google, Outlook, or iCloud. We only remove our own records. See the <a href="/terms-and-services.html">Terms of Service</a>.</p>
 
-      <h2>Legal Basis</h2>
-      <p>The legal basis for processing your calendar availability is your explicit consent (Art. 6(1)(a) GDPR). You may
-        withdraw your consent at any time by revoking calendar access in your device settings or by deleting your
-        account.</p>
+      <h2 id="other-data">4. Other data we process</h2>
+      <p><strong>Account (sign-in with Google or Apple via AWS Cognito)</strong><br>
+        Email address (Apple may provide a Hide My Email relay address), name, profile photo URL, language preference, and a user ID.</p>
+      <p><strong>Connections between users</strong><br>
+        Invite codes (they expire after about a day) and who connected with whom.</p>
+      <p><strong>Device notifications</strong><br>
+        A push token, platform, and language, so we can send meeting updates.</p>
+      <p><strong>Subscriptions</strong><br>
+        Whether you have Premium, expiry, store platform, and the identifiers the App Store / Google Play need so we can restore and validate purchases.</p>
+      <p><strong>Feedback</strong><br>
+        What you send us in the in-app feedback form.</p>
+      <p><strong>AI suggestions (Google Gemini)</strong><br>
+        If you type a natural-language request (for example “next week Tuesday afternoon”), we send <strong>that text</strong>, together with your time zone and app language, to Google Gemini so it can be turned into time windows. We do <strong>not</strong> send your calendar, your event titles, your name, or the names of the people you invite.<br>
+        We log your request together with the interpretation we get back, linked to your user ID, so we can spot misreadings and improve how well the app understands you. These log entries are deleted after about 30 days, and we do not use them for advertising.</p>
+      <p><strong>Usage counters</strong><br>
+        How many AI requests you have made in the current period, so we can apply the limits of the free and Premium plans.</p>
+      <p><strong>App diagnostics and ads (only with your consent where required)</strong><br>
+        Firebase Analytics, Firebase Crashlytics, and Google AdMob. If you consent to ads, the advertising identifier of your device (IDFA on iOS, Advertising ID on Android) and technical data about the ad request are processed by Google for ad delivery and, if you allow it, for personalised ads. On iOS we ask separately through Apple’s App Tracking Transparency dialog. Without consent, ads are non-personalised. Calendar content and meeting content are never sent to these products. You manage this in the app (consent / “Cookie settings”), and Premium removes ads entirely.</p>
+      <p><strong>Data stored on your device</strong><br>
+        The app keeps a local copy of your profile (name, email, profile picture URL, subscription status), your calendar connection status, your language, your consent choices, and a pending invite code, so it can start without reloading everything. This stays on your device. Removing the app removes it.</p>
+      <p><strong>Website</strong><br>
+        <a href="https://calendair.de">calendair.de</a> is a static site hosted on <strong>GitHub Pages</strong> (GitHub, Inc.); GitHub processes your IP address and request data in its server logs to deliver the pages and defend against attacks. Fonts, icons and every other file are served from our own domain: the site embeds <strong>no</strong> third-party content, sets no cookies of its own, and uses no analytics or advertising cookies. An invite link contains the invite code and, if your friend shared it that way, their first name in the URL; that is only displayed in your browser and is not stored by us.</p>
+      <p><strong>Security and operations</strong><br>
+        We keep technical logs (for example error messages, user ID, timestamps) to run, secure, and debug the service. We do not log calendar content, meeting titles, access tokens, or passwords. The one piece of content we do log is the scheduling request you type &mdash; see “AI suggestions” above.</p>
 
-      <h2>Third-Party Services Used</h2>
-      <p>Our application is built using secure infrastructure and services. We use the following major service providers
-        for our core functionality and infrastructure:</p>
+      <h2 id="legal-bases">5. Purposes and legal bases (GDPR)</h2>
       <ul>
-        <li><strong>AWS (Amazon Web Services)</strong> – for cloud infrastructure.</li>
-        <li><strong>Google</strong> – for Google Calendar API access and Google OAuth 2.0 authentication.</li>
-        <li><strong>Apple</strong> – for Apple EventKit access and Apple authentication.</li>
-        <li><strong>Microsoft Outlook</strong> – for Microsoft Graph API access.</li>
-        <li><strong>Firebase Core / Analytics / Crashlytics</strong> – for app analytics and crash diagnostics (no
-          calendar content is transmitted).</li>
-      </ul>
-      <p>We may also use advertising services (like Google AdMob). All data collected for advertising is subject to your
-        explicit consent, which is managed via our in-app consent tool. For detailed terms of service and privacy
-        policies of the other listed providers, please refer to their respective websites.</p>
-
-      <h2>International Transfers</h2>
-      <p>Some services (Google, AWS) may process data outside the EU. In such cases, we rely on:</p>
-      <ul>
-        <li>Standard Contractual Clauses (SCCs)</li>
-        <li>Adequacy decisions</li>
-        <li>Other legally recognized safeguards</li>
+        <li><strong>Provide the account, meetings, calendar sync, invites, and Premium you asked for</strong> — Art. 6(1)(b) GDPR (contract).</li>
+        <li><strong>Connect calendars and Contacts, and show ads/analytics where we ask you</strong> — Art. 6(1)(a) GDPR (consent). You can withdraw consent without affecting the lawfulness of processing before withdrawal. Withdrawing calendar consent means disconnecting the calendar; it is not the same as deleting your whole account.</li>
+        <li><strong>Security, abuse prevention, debugging, legal claims, and improving how well the AI understands scheduling requests</strong> — Art. 6(1)(f) GDPR (legitimate interests).</li>
+        <li><strong>Legal obligations</strong> (for example tax or store accounting) — Art. 6(1)(c) GDPR.</li>
       </ul>
 
-      <h2>Your Rights</h2>
-      <p>You have the right to:</p>
+      <h2 id="google-limited-use">6. Google API Services User Data Policy (Limited Use)</h2>
+      <p>The use of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+      <p>In particular:</p>
       <ul>
-        <li>Access your personal data</li>
-        <li>Request deletion of your data</li>
-        <li>Withdraw consent</li>
-        <li>Object to processing</li>
-        <li>File a complaint with your local data protection authority</li>
+        <li>We use Google user data only to provide and improve user-facing CalendAIr features (availability, creating/updating CalendAIr meetings on your calendar, and the Contacts group described above).</li>
+        <li>We do not use Google Calendar or Contacts data to serve advertisements.</li>
+        <li>We do not sell that data.</li>
+        <li>We do not allow humans to read it unless you give affirmative consent, it is needed for security or to comply with law, or use is limited to internal operations such as debugging (aggregated or as needed to fix an issue you report).</li>
       </ul>
-      <p>To exercise these rights, contact us at: <em>[insert email]</em></p>
+      <p>Our use of Microsoft Graph data follows the <a href="https://docs.microsoft.com/en-us/legal/microsoft-apis/terms-of-use">Microsoft APIs Terms of Use</a> and is limited to the Outlook calendar features described in this policy.</p>
+
+      <h2 id="processors">7. Who we share data with (processors / providers)</h2>
+      <p>We use other companies to run the product. They process data on our instructions or as independent controllers for their own platforms (sign-in, stores, ads):</p>
+      <ul>
+        <li><strong>Amazon Web Services</strong> — hosting, database, authentication (Cognito), logs (primarily EU, Germany).</li>
+        <li><strong>Google</strong> — sign-in, Calendar and Contacts APIs, Gemini, Firebase (Analytics, Crashlytics, Cloud Messaging), AdMob, Google Play billing.</li>
+        <li><strong>Apple</strong> — Sign in with Apple, iCloud Calendar (CalDAV), App Store billing and subscription notifications.</li>
+        <li><strong>Microsoft</strong> — Outlook / Microsoft Graph calendar access.</li>
+        <li><strong>GitHub</strong> — hosting of the website calendair.de (not the app or your data).</li>
+      </ul>
+      <p>We do not sell your personal data.</p>
+
+      <h2 id="transfers">8. Transfers outside the EEA</h2>
+      <p>Our own infrastructure is primarily in the EU. Google, Apple, Microsoft, and some AWS functions may process data in the United States or other countries. Where required, we rely on the EU Standard Contractual Clauses, an adequacy decision (including the EU–US Data Privacy Framework where a provider is certified), and similar safeguards.</p>
+
+      <h2 id="retention">9. How long we keep data</h2>
+      <p>We keep data only as long as needed for the purposes above, then delete or anonymise it.</p>
+      <p>Typical periods in the product today:</p>
+      <ul>
+        <li><strong>Account</strong> after you delete it in the app: about <strong>90 days</strong> (anonymised, then removed). Sign-in at Cognito is disabled.</li>
+        <li><strong>CalendAIr meetings:</strong> until about <strong>21 days after the meeting ends</strong>.</li>
+        <li><strong>Invite codes:</strong> about <strong>25 hours</strong>.</li>
+        <li><strong>Feedback:</strong> about <strong>6 months</strong>.</li>
+        <li><strong>Operational logs</strong> (including the AI requests described in section 4): about <strong>30 days</strong>; we do not use them to build a profile of you.</li>
+        <li><strong>Sign-in record:</strong> after you delete your account, your sign-in is disabled immediately so nobody can log in as you. The remaining sign-in entry (email address and provider ID) is removed together with the account data.</li>
+      </ul>
+      <p>Meetings you created may remain visible to other participants until those periods elapse, even if you delete your account. Events already on Google, Outlook, or iCloud stay there unless you delete them in that calendar.</p>
+
+      <h2 id="rights">10. Your rights</h2>
+      <p>You may request <strong>access</strong>, <strong>rectification</strong>, <strong>erasure</strong>, <strong>restriction</strong>, <strong>portability</strong>, and you may <strong>object</strong> to processing based on legitimate interests. You may <strong>withdraw consent</strong> at any time.</p>
+      <p><strong>In the app:</strong> disconnect calendars; delete your account under Profile. You can also request deletion without the app &mdash; see <a href="/delete-account.html">Delete your account</a>.</p>
+
+      <p><strong>By email:</strong> <a href="mailto:info@calendair.de">info@calendair.de</a>. We do not currently offer a full automated data-export file; we will handle access requests manually.</p>
+      <p>You can complain to a supervisory authority. For our seat in North Rhine-Westphalia that is the <strong>Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen (LDI NRW)</strong>. You may also contact the authority in your country of residence.</p>
+
+      <h2 id="automated-decisions">11. Automated decision-making</h2>
+      <p>We do not use automated decision-making or profiling that produces legal effects for you or similarly significantly affects you (Art. 22 GDPR). The AI only converts the text you type into time windows; you always choose the slot yourself.</p>
+
+      <h2 id="security">12. Security</h2>
+      <p>Traffic between the app and our servers is encrypted in transit (TLS). Our databases run in the EU (AWS, Frankfurt) and are encrypted at rest. Calendar refresh tokens and iCloud app-specific passwords get an additional layer of encryption before they are stored. No system is perfectly secure; if a breach affects you, we will inform you as required by Art. 33 and 34 GDPR.</p>
+
+      <h2 id="children">13. Children</h2>
+      <p>CalendAIr is not directed at children under 16. We do not knowingly collect personal data from children under 16. If you believe a child has given us personal data, write to <a href="mailto:info@calendair.de">info@calendair.de</a> and we will delete it.</p>
+
+      <h2 id="changes">14. Changes</h2>
+      <p>We may update this policy. We will change the date above and, for material changes, notify you in the app or on the website.</p>
+
+      <h2 id="contact">15. Contact</h2>
+
+      <address>
+        CalendAIr H.I. UG (haftungsbeschränkt)<br>
+        <a href="mailto:info@calendair.de">info@calendair.de</a>
+      </address>
     </section>
   </main>
 

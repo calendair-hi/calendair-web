@@ -894,6 +894,13 @@ footer {
   box-shadow: var(--shadow-sm);
 }
 
+.page-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
 .page h1 {
   font-size: 2.2rem;
   letter-spacing: -0.02em;
@@ -902,14 +909,35 @@ footer {
 
 .page h2 {
   font-size: 1.4rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-top: 2.25rem;
+  margin-bottom: 0.85rem;
+}
+
+.page h3 {
+  font-size: 1.05rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.55rem;
 }
 
 .page p,
-.page ul {
+.page ul,
+.page address {
   color: var(--text-muted);
   margin-bottom: 1.25rem;
+}
+
+.page strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.page .legal-meta {
+  margin-bottom: 1.5rem;
+}
+
+.page address {
+  font-style: normal;
+  line-height: 1.7;
 }
 
 .page ul {
@@ -918,6 +946,10 @@ footer {
 
 .page li {
   margin-bottom: 0.5rem;
+}
+
+.page li:last-child {
+  margin-bottom: 0;
 }
 
 .breadcrumbs {
@@ -1048,6 +1080,14 @@ footer {
     box-shadow: none;
   }
 
+  .page-head {
+    flex-wrap: wrap;
+  }
+
+  .page-head .lang-switcher {
+    margin-left: auto;
+  }
+
   .footer-logo-img {
     max-width: 260px;
     /* Elegant, readable size on mobile that never overflows the viewport */
@@ -1167,4 +1207,27 @@ footer {
   .invite-card {
     padding: 2rem 1.25rem;
   }
+}
+/* Flag icons — self-hosted replacement for the flag-icons CDN stylesheet.
+   Only the two flags the language switcher uses. SVGs from flag-icons (MIT). */
+.fi {
+  position: relative;
+  display: inline-block;
+  width: 1.33333333em;
+  line-height: 1em;
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.fi::before {
+  content: "\00a0";
+}
+
+.fi-de {
+  background-image: url("/assets/flags/de.svg");
+}
+
+.fi-gb {
+  background-image: url("/assets/flags/gb.svg");
 }
