@@ -5,7 +5,8 @@
       "namespace": "android_app",
       "package_name": "com.calendair.calendair_app",
       "sha256_cert_fingerprints": [
-        "18:04:9A:4A:27:69:73:DC:FE:82:69:E4:6D:51:70:75:3E:99:F4:2C:8F:15:AB:B8:1F:AA:27:1B:AD:3E:FF:78"
+        "18:04:9A:4A:27:69:73:DC:FE:82:69:E4:6D:51:70:75:3E:99:F4:2C:8F:15:AB:B8:1F:AA:27:1B:AD:3E:FF:78",
+        "E9:1B:96:A0:87:B8:52:28:66:90:4D:7D:92:D3:37:61:DB:FC:F5:52:13:3D:E4:50:EC:78:73:5C:3E:6A:DA:00"
       ]
     }
   }
