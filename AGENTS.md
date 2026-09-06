@@ -78,6 +78,8 @@ Keep these: they are what stops the site looking like a generic template:
 ### 5. Phone Mockups & Screenshots
 The hero shows **two real app screens**, never a mocked-up one:
 -   `.phone-mockup` holds `assets/Dashboard.png` (home: required actions, Quick Meet, upcoming events).
+    It draws **no** notch or speaker: the screenshots already contain the real status bar and dynamic
+    island, and painting a second one over them looked broken.
     Bezel `#2C2C38`, inner area 278x620 px, which is the 0.448 aspect ratio of the PNGs (1280x2856),
     so `object-fit: cover` crops nothing. **If you swap it, match that ratio or resize the mockup.**
 -   `.slot-detail` holds a **crop** of `assets/available_time_slots.png`, overlapping at bottom left.
@@ -100,12 +102,21 @@ captioned as an explanation of the mechanic. Keep that separation.
 
 ### 6. Copy must match the legal texts
 The privacy policy and terms are approved and describe exactly what the app does. The landing pages
-must not overstate them. Two claims were wrong and have been fixed: do not reintroduce them:
+must not overstate them. Several claims were wrong and have been fixed; do not reintroduce them:
 -   ❌ *"only ever asks for free/busy times"*: the policy says event data **is** requested from the
     provider's API and processed in memory; only the *storing* of titles, locations, notes and attendee
     lists is ruled out. Say "we read when your events start and end", not "we only get free/busy".
 -   ❌ *"No tracking"* as a blanket claim: Firebase Analytics, Crashlytics and AdMob run in the app
     with consent. Only the **website** embeds no third-party content.
+-   ❌ *"event details are never stored"*: meetings the user creates in CalendAIr **are** stored
+    (title, description, invitees). Only the content of their pre-existing events is not. The hero
+    eyebrow just says "GDPR-compliant", which needs no asterisk.
+-   ❌ *"all three calendars at once"* / *"checked in parallel"*: a user has exactly **one** provider.
+    `models.User.CalendarProvider` is a single string ("google", "outlook", "apple") and
+    `parseCalendarsForProvider` filters connections down to it. Within that one account several
+    calendars can be selected: `MaxCalendarsForFree = 1`, `MaxCalendarsForPremium = 3`
+    (`internal/shared/models/subscription_limits.go`). So the story is choice and selection, not
+    simultaneity. Write "Google Calendar, Outlook **or** Apple Calendar".
 -   ❌ *"Accept a slot, done"*: accepting a suggestion does not by itself create the calendar event.
     `respondToMeeting/handler.go` creates the shared event on the **first response** from an invitee
     (`isFirstResponse := meetingRec.ICalUID == ""`), and skips it entirely if the only attendee of a

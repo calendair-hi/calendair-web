@@ -519,19 +519,9 @@ h4 {
   color: var(--success);
 }
 
-/* Dynamic-island style cutout, centred over the status bar */
-.phone-speaker {
-  position: absolute;
-  top: 9px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 78px;
-  height: 22px;
-  background: var(--ink);
-  border-radius: 999px;
-  z-index: 10;
-}
-
+/* No drawn notch or speaker here: the screenshots already contain
+   the device's own status bar and dynamic island, and a second one
+   painted on top looked wrong. */
 .phone-screen {
   flex: 1;
   display: flex;
@@ -680,7 +670,7 @@ h4 {
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding: 3rem 0.85rem 1rem;
+  padding: 1.5rem 0.85rem 1rem;
   background: var(--white);
   z-index: 1;
   height: 100%;
