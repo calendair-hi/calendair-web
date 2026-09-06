@@ -106,8 +106,18 @@ must not overstate them. Two claims were wrong and have been fixed: do not reint
     lists is ruled out. Say "we read when your events start and end", not "we only get free/busy".
 -   ❌ *"No tracking"* as a blanket claim: Firebase Analytics, Crashlytics and AdMob run in the app
     with consent. Only the **website** embeds no third-party content.
--   Natural-language requests go to **Google Gemini**; the calendar, event titles, the user's name and
-    invitee names are not sent. The feature card says so explicitly.
+-   ❌ *"Accept a slot, done"*: accepting a suggestion does not by itself create the calendar event.
+    `respondToMeeting/handler.go` creates the shared event on the **first response** from an invitee
+    (`isFirstResponse := meetingRec.ICalUID == ""`), and skips it entirely if the only attendee of a
+    two-party meeting declines. Phrase it as "as soon as the first person accepts".
+
+**Do not name the AI vendor on the landing pages.** The privacy policy names Google Gemini because it
+has to; marketing copy does not, and the vendor may change. Say "the AI". For the same reason, keep the
+copy on *what stays private* rather than on how matching works: competitors read landing pages.
+
+Careful with the tempting shorthand "we never send your data to the AI" - the sentence the user types
+**is** sent. The accurate and equally strong claim is that the calendars, the events and the invitees
+are never sent.
 
 Before adding a feature to the landing page, confirm it exists in `calendar-matcher`. A card promising
 automated reminders/nudges was removed because no such feature exists: the only push trigger in the

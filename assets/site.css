@@ -566,6 +566,20 @@ h4 {
   box-shadow: var(--shadow-1);
 }
 
+/* The typed request, shown above the lanes: it is what sets the
+   window the calendars are compared in */
+.sf-prompt {
+  margin: 0 0 0.85rem;
+  padding: 0.5rem 0.7rem;
+  background: var(--teal-10);
+  border-radius: var(--r-sm);
+  border-bottom-left-radius: var(--r-xs);
+  font-size: 0.76rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--ink);
+}
+
 .sf-head {
   display: flex;
   align-items: baseline;
@@ -1261,19 +1275,11 @@ footer {
   color: var(--grey-medium);
 }
 
-/* The claim, set as type rather than baked into the logo artwork,
-   so it stays legible at any footer width */
-.footer-brand .footer-claim {
-  font-size: 1.3rem;
-  font-weight: 700;
-  letter-spacing: -0.025em;
-  color: var(--ink);
-  margin: 0.25rem 0 0;
-}
-
+/* logo-with-slogan.svg carries "Plan Less. Meet More." as artwork,
+   so it needs enough width for the slogan to stay legible */
 .footer-logo-img {
   width: 100%;
-  max-width: 230px;
+  max-width: 320px;
   height: auto;
   display: block;
 }
@@ -1739,7 +1745,7 @@ footer {
   }
 
   .footer-logo-img {
-    max-width: 240px;
+    max-width: 280px;
   }
 }
 
