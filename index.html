@@ -17,7 +17,7 @@
 
 <body>
 
-  <!-- Premium Sticky Glass Navbar -->
+  <!-- Sticky navbar -->
   <nav class="navbar">
     <div class="container navbar-container">
       <a href="/" class="logo">
@@ -38,15 +38,15 @@
     </div>
   </nav>
 
-  <!-- Hero Section with Device Mockup -->
+  <!-- Hero -->
   <header class="hero-section">
     <div class="container hero-grid">
       <div class="hero-content">
-        <div class="hero-badge">🛡️ GDPR-Compliant AI Scheduling</div>
-        <h1>End the <span class="gradient-text">"When are you free?"</span> chaos.</h1>
+        <p class="eyebrow">GDPR-compliant &middot; event details never stored</p>
+        <h1>End the <span class="mark">&ldquo;When are you free?&rdquo;</span> chaos.</h1>
         <p class="hero-description">
-          CalendAIr securely syncs your calendars, finds the perfect time slot using privacy-first AI coordination, and
-          helps you actually meet your friends. No back-and-forth messaging, no tracking.
+          CalendAIr checks your connected calendars for when you are busy, works out the slot that actually
+          suits everyone, and writes the event into everyone&rsquo;s calendar. No group chat, no back-and-forth.
         </p>
         <div class="store-badges">
           <a class="store-badge" href="https://apps.apple.com" target="_blank" rel="noopener">
@@ -56,7 +56,7 @@
             <img src="/assets/play-store-en.svg" alt="Get it on Google Play">
           </a>
         </div>
-        <p class="store-note">Available on iOS & Android • Connects Google Calendar, Outlook, and Apple Calendar</p>
+        <p class="store-note">iOS &amp; Android &middot; connects Google Calendar, Outlook and Apple Calendar</p>
       </div>
 
       <div class="hero-visual">
@@ -64,8 +64,9 @@
           <div class="phone-speaker"></div>
           <div class="phone-screen">
             <!-- Overlay screenshot: if it exists, it covers the container. If missing, it hides itself gracefully -->
-            <img src="/assets/screenshot-placeholder.png" alt="CalendAIr App Screenshot" class="app-screenshot"
-              onerror="this.style.display='none';">
+            <img src="/assets/Dashboard.png"
+              alt="The CalendAIr dashboard: a lunch invitation waiting for a reply, Quick Meet contacts, and upcoming events"
+              class="app-screenshot" onerror="this.style.display='none';">
 
             <div class="phone-fallback-content">
               <div class="fallback-app-header">
@@ -82,14 +83,26 @@
                   </div>
                   <strong>Tuesday, May 26th @ 3:00 PM works!</strong>
                 </div>
-                <div class="fallback-screenshot-note">
-                  <span>[ App Screenshot ]</span>
-                  <small>Drop your screenshot here as <code>screenshot-placeholder.png</code></small>
-                </div>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- A detail of the second real screen. Cropped rather than
+             shrunk into a small phone, so the type stays readable. -->
+        <figure class="slot-detail">
+          <img src="/assets/available_time_slots.png"
+            alt="Available time slots in CalendAIr: Monday, Tuesday and Wednesday evening, each one hour with an Accept button"
+            class="slot-detail-view" onerror="this.closest('.slot-detail').remove();">
+          <figcaption>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="8 12 11 15 16 9" />
+            </svg>
+            Free for everyone invited
+          </figcaption>
+        </figure>
       </div>
     </div>
   </header>
@@ -97,7 +110,11 @@
   <!-- Synced Calendars Strip -->
   <section class="calendar-strip">
     <div class="container">
-      <div class="calendar-strip-title">Securely integrates with the calendars you already use</div>
+      <div class="calendar-strip-copy">
+        <p class="calendar-strip-title">Connect Google Calendar, Outlook and Apple Calendar</p>
+        <p class="calendar-strip-note">All three at the same time. Every calendar you connect is checked before a
+          time is offered, so a slot that looks free really is free.</p>
+      </div>
       <div class="calendar-logos">
         <div class="calendar-logo">
           <!-- Google Calendar Official SVG -->
@@ -110,7 +127,7 @@
               <path fill="#188038" d="M-3.75,148.882v31.579c0,8.724,7.066,15.789,15.789,15.789h31.579v-47.368H-3.75z"/>
               <path fill="#FBBC04" d="M148.882,43.618v105.263h47.368V43.618l-23.684-10.526L148.882,43.618z"/>
               <path fill="#1967D2" d="M196.25,43.618V12.039c0-8.724-7.066-15.789-15.789-15.789h-31.579v47.368H196.25z"/>
-              <text x="94" y="99" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="80" font-weight="700" fill="#1967D2" text-anchor="middle" dominant-baseline="central" class="google-cal-date">19</text>
+              <text x="96.25" y="96.25" dy="0.36em" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="72" font-weight="700" fill="#1967D2" text-anchor="middle" class="google-cal-date">19</text>
             </g>
           </svg>
           <span>Google Calendar</span>
@@ -162,127 +179,164 @@
     </div>
   </section>
 
-  <!-- How It Works Section -->
+  <!-- How it works -->
   <section id="how-it-works" class="how-it-works-section">
     <div class="container">
-      <div class="section-header">
-        <h2>How It Works</h2>
-        <p>Three simple steps to coordinate with friends without sacrificing your privacy.</p>
+      <div class="section-head">
+        <p class="eyebrow">How it works</p>
+        <h2>Three steps, then the invite is out.</h2>
+        <p>No polls to fill in, no doodle links, no chasing the one person who never replies.</p>
       </div>
 
       <div class="steps-grid">
         <div class="step-card">
           <div class="step-num">1</div>
-          <h3>Connect Safely</h3>
-          <p>Link your calendars securely. Our app operates strictly on-device, only accessing free/busy schedules.</p>
-          <div class="step-visual">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent);">
-              <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
-              <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-            </svg>
-          </div>
+          <h3>Connect your calendars</h3>
+          <p>Link Google Calendar, Outlook or Apple Calendar. We read when your events start and end. What is in
+            them is never stored.</p>
+          <span class="step-note">Google &middot; Outlook &middot; Apple</span>
         </div>
 
         <div class="step-card">
           <div class="step-num">2</div>
-          <h3>Prompt the AI</h3>
-          <p>Simply type what you want in natural language: "Find coffee slots with Sarah for next Tuesday."</p>
-          <div class="step-visual">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent);">
-              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-            </svg>
-          </div>
+          <h3>Say what you want</h3>
+          <p>&ldquo;Two hours for coffee with Sarah next week&rdquo; is a complete request. That is the whole interface.</p>
+          <span class="step-note">Plain language</span>
         </div>
 
         <div class="step-card">
           <div class="step-num">3</div>
-          <h3>Instantly Book</h3>
-          <p>CalendAIr calculates perfect overlapping slots and sends standard invites. No more manual chasing.</p>
-          <div class="step-visual">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent);">
-              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-              <polyline points="22 4 12 14.01 9 11.01" />
-            </svg>
-          </div>
+          <h3>Accept a slot, done</h3>
+          <p>You get the times that work for everyone. Accepting writes a real event into every connected calendar.</p>
+          <span class="step-note">Real calendar events</span>
         </div>
       </div>
+
+      <!-- The mechanic behind step 3, drawn as a diagram. It is
+           explicitly not an app screen - both hero phones show those. -->
+      <figure class="match-panel">
+        <figcaption class="match-panel-copy">
+          <h3>How a slot gets found</h3>
+          <p>Everyone&rsquo;s connected calendars are laid over each other. What is still free across all of them is
+            what you get offered. Nothing else is considered.</p>
+        </figcaption>
+
+        <div class="slot-finder">
+          <div class="sf-head">
+            <span class="sf-title">Shared availability</span>
+            <span class="sf-date">Tue 26</span>
+          </div>
+          <div class="sf-scale"><span>9</span><span>12</span><span>15</span><span>18</span><span>21</span></div>
+          <div class="sf-row">
+            <span class="sf-name">You</span>
+            <div class="sf-lane">
+              <i class="sf-busy" style="grid-column:1/3"></i>
+              <i class="sf-busy" style="grid-column:4/5"></i>
+              <i class="sf-busy" style="grid-column:10/12"></i>
+            </div>
+          </div>
+          <div class="sf-row">
+            <span class="sf-name">Sarah</span>
+            <div class="sf-lane">
+              <i class="sf-busy" style="grid-column:1/2"></i>
+              <i class="sf-busy" style="grid-column:5/7"></i>
+              <i class="sf-busy" style="grid-column:11/13"></i>
+            </div>
+          </div>
+          <div class="sf-row sf-row--match">
+            <span class="sf-name">Match</span>
+            <div class="sf-lane">
+              <i class="sf-free" style="grid-column:7/9"></i>
+            </div>
+          </div>
+          <p class="sf-result">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="8 12 11 15 16 9" />
+            </svg>
+            15:00 &ndash; 17:00 &middot; free for both
+          </p>
+        </div>
+      </figure>
     </div>
   </section>
 
-  <!-- Features Grid Section -->
+  <!-- Features -->
   <section id="features" class="features-section">
     <div class="container">
-      <div class="section-header">
-        <h2>Built for Connection. Designed for Privacy.</h2>
-        <p>A smart, elegant assistant that coordinates meetings while protecting your data.</p>
+      <div class="section-head">
+        <p class="eyebrow">What you get</p>
+        <h2>Built for meeting up. Designed to know as little as possible.</h2>
+        <p>Coordination that works across every calendar you own, without your events leaving them.</p>
       </div>
 
       <div class="features-grid">
         <article class="feature-card">
-          <div class="feature-icon-wrapper">
+          <div class="feature-head">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round">
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
             </svg>
+            <h3>Privacy by design</h3>
           </div>
-          <h3>Privacy by Design</h3>
-          <p>To suggest a slot we only use the free/busy times of your existing events. Their titles, notes, locations
-            and attendee lists are never stored in our databases and never shown to anyone else.</p>
+          <p>To suggest a slot we only use when your existing events start and end. Their titles, notes, locations and
+            attendee lists are never stored in our databases and never shown to anyone else.</p>
         </article>
 
         <article class="feature-card">
-          <div class="feature-icon-wrapper">
+          <div class="feature-head">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round">
               <polygon points="12 2 2 7 12 12 22 7 12 2" />
               <polyline points="2 17 12 22 22 17" />
               <polyline points="2 12 12 17 22 12" />
             </svg>
+            <h3>Every calendar at once</h3>
           </div>
-          <h3>Unified Syncing</h3>
-          <p>Sync all your calendar networks in parallel. Connect Google Calendar, Microsoft Outlook and Apple iCloud
-            Calendar simultaneously to eliminate double-booking.</p>
+          <p>Google Calendar, Microsoft Outlook and Apple iCloud Calendar are checked in parallel, so a slot that looks
+            free really is free.</p>
         </article>
 
         <article class="feature-card">
-          <div class="feature-icon-wrapper">
+          <div class="feature-head">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round">
               <circle cx="12" cy="12" r="10" />
               <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
               <line x1="12" y1="17" x2="12.01" y2="17" />
             </svg>
+            <h3>Asked in plain words</h3>
           </div>
-          <h3>Smart AI Parsing</h3>
-          <p>Ask in natural speech. Our secure availability parser maps dates, timeframes, durations, and names
-            effortlessly into clean options.</p>
+          <p>Dates, timeframes and durations are read straight out of your sentence. Only that sentence goes to Google
+            Gemini to be turned into time windows. Your calendar, your events and the people you invite are not sent.</p>
         </article>
 
         <article class="feature-card">
-          <div class="feature-icon-wrapper">
+          <div class="feature-head">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round">
-              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
-              <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
             </svg>
+            <h3>Your circle, one tap away</h3>
           </div>
-          <h3>Automated Nudges</h3>
-          <p>Tired of friends forgetting to reply? CalendAIr automatically handles gentle, polite reminders at the best
-            times to lock in meetings.</p>
+          <p>Connect with friends once through an invite code, then start straight from Quick Meet. No email chains, no
+            adding the same people over and over.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Accordion FAQ Section -->
+  <!-- FAQ -->
   <section id="faq" class="faq-section">
     <div class="container faq-wrapper">
-      <div class="section-header">
-        <h2>Frequently Asked Questions</h2>
-        <p>Answers to common questions about starting up, features, and security.</p>
+      <div class="section-head">
+        <p class="eyebrow">Questions</p>
+        <h2>The things people ask first.</h2>
+        <p>Mostly about data. Fair enough. <a href="/faq.html">The full FAQ</a> goes into more detail.</p>
       </div>
 
       <div class="faq">
@@ -305,9 +359,9 @@
           <div class="faq-answer">
             <p><strong>Yes. Privacy and GDPR compliance are the foundational core of CalendAIr.</strong></p>
             <ul>
-              <li>To find a slot, our servers have to look at your calendar &mdash; but only at the free/busy times.
+              <li>To find a slot, our servers call your calendar provider&rsquo;s API and work out when you are busy.
                 Titles, locations, notes and attendee lists of your existing events are never stored in our databases
-                and are never shown to anyone else.</li>
+                and are never shown to anyone else. They are processed in memory and then discarded.</li>
               <li>Meetings you create in CalendAIr are different: title, description and invitees are stored, so we can
                 show them to the people you invite and write the event to the connected calendars.</li>
               <li>All secure connection tokens are encrypted, and we never share or sell your information. You remain in
@@ -330,13 +384,12 @@
     </div>
   </section>
 
-  <!-- Bottom CTA Banner Section -->
+  <!-- Download -->
   <section id="download" class="cta-section">
     <div class="container">
       <div class="cta-card">
-        <h2>End scheduling chaos today</h2>
-        <p>Download CalendAIr on your mobile device, sync your calendars securely, and start scheduling meetups
-          instantly with AI.</p>
+        <h2>Stop asking. Start meeting.</h2>
+        <p>Install CalendAIr, connect your calendars, and let the next meetup sort itself out.</p>
         <div class="store-badges">
           <a class="store-badge" href="https://apps.apple.com" target="_blank" rel="noopener">
             <img src="/assets/apple-store-en.svg" alt="Download on the App Store">
@@ -349,15 +402,16 @@
     </div>
   </section>
 
-  <!-- Premium Structured Footer -->
+  <!-- Footer -->
   <footer>
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="/" class="logo">
-            <img src="/assets/logo-with-slogan.svg" alt="CalendAIr Logo" class="footer-logo-img">
+            <img src="/assets/logo_without_slogan.svg" alt="CalendAIr" class="footer-logo-img">
           </a>
-          <p>Plan Less. Meet More. Secure, GDPR-compliant AI calendar coordination.</p>
+          <p class="footer-claim">Plan Less. Meet More.</p>
+          <p>GDPR-compliant calendar coordination, made in D&uuml;sseldorf.</p>
         </div>
         <div class="footer-links">
           <strong>Legal & Compliance</strong>

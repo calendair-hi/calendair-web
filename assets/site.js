@@ -40,8 +40,19 @@ function setGoogleCalendarDate() {
   });
 }
 
+// The navbar sits flush on the page and only lifts once you scroll,
+// instead of carrying a permanent shadow.
+function trackNavbarScroll() {
+  const navbar = document.querySelector(".navbar");
+  if (!navbar) return;
+  const update = () => navbar.classList.toggle("is-stuck", window.scrollY > 4);
+  update();
+  window.addEventListener("scroll", update, { passive: true });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   applyAppView();
+  trackNavbarScroll();
   setCurrentYear();
   setGoogleCalendarDate();
   openFaqFromLocation();

@@ -17,7 +17,7 @@
 
 <body>
 
-  <!-- Premium Sticky Glass Navbar (German) -->
+  <!-- Sticky navbar (German) -->
   <nav class="navbar">
     <div class="container navbar-container">
       <a href="/de/" class="logo">
@@ -38,16 +38,15 @@
     </div>
   </nav>
 
-  <!-- Hero Section with German Device Mockup -->
+  <!-- Hero (German) -->
   <header class="hero-section">
     <div class="container hero-grid">
       <div class="hero-content">
-        <div class="hero-badge">🛡️ DSGVO-konforme KI-Terminplanung</div>
-        <h1>Beende das <span class="gradient-text">„Wann hast du Zeit?“</span>-Chaos.</h1>
+        <p class="eyebrow">DSGVO-konform &middot; Termininhalte werden nie gespeichert</p>
+        <h1>Beende das <span class="mark">&bdquo;Wann hast du Zeit?&ldquo;</span>-Chaos.</h1>
         <p class="hero-description">
-          CalendAIr synchronisiert deine Kalender sicher, findet den perfekten freien Termin durch
-          datenschutzfreundliche KI-Koordination und hilft dir, deine Freunde wirklich zu treffen. Ohne ständiges Hin
-          und Her, ohne Tracking.
+          CalendAIr pr&uuml;ft in deinen verbundenen Kalendern, wann du belegt bist, ermittelt den Termin, der allen
+          wirklich passt, und tr&auml;gt ihn bei allen ein. Ohne Gruppenchat, ohne Hin und Her.
         </p>
         <div class="store-badges">
           <a class="store-badge" href="https://apps.apple.com" target="_blank" rel="noopener">
@@ -57,7 +56,7 @@
             <img src="/assets/play-store-de.svg" alt="Bei Google Play herunterladen">
           </a>
         </div>
-        <p class="store-note">Verfügbar für iOS & Android • Verbindet Google Calendar, Outlook und Apple Calendar</p>
+        <p class="store-note">iOS &amp; Android &middot; verbindet Google Calendar, Outlook und Apple Calendar</p>
       </div>
 
       <div class="hero-visual">
@@ -65,7 +64,9 @@
           <div class="phone-speaker"></div>
           <div class="phone-screen">
             <!-- Overlay screenshot: if it exists, it covers the container. If missing, it hides itself gracefully -->
-            <img src="/assets/screenshot-placeholder.png" alt="CalendAIr App Screenshot" class="app-screenshot"
+            <img src="/assets/Dashboard.png"
+              alt="Das CalendAIr-Dashboard: eine offene Einladung zum Mittagessen, Quick-Meet-Kontakte und anstehende Termine"
+              class="app-screenshot"
               onerror="this.style.display='none';">
 
             <div class="phone-fallback-content">
@@ -83,14 +84,26 @@
                   </div>
                   <strong>Dienstag, 26. Mai @ 15:00 Uhr klappt!</strong>
                 </div>
-                <div class="fallback-screenshot-note">
-                  <span>[ App-Screenshot ]</span>
-                  <small>Füge deinen Screenshot hier als <code>screenshot-placeholder.png</code> ein</small>
-                </div>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Ausschnitt des zweiten echten Screens. Beschnitten statt in
+             ein kleines Phone geschrumpft, damit die Schrift lesbar bleibt. -->
+        <figure class="slot-detail">
+          <img src="/assets/available_time_slots.png"
+            alt="Verf&uuml;gbare Zeitfenster in CalendAIr: Montag-, Dienstag- und Mittwochabend, jeweils eine Stunde mit Annehmen-Button"
+            class="slot-detail-view" onerror="this.closest('.slot-detail').remove();">
+          <figcaption>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="8 12 11 15 16 9" />
+            </svg>
+            Bei allen Eingeladenen frei
+          </figcaption>
+        </figure>
       </div>
     </div>
   </header>
@@ -98,7 +111,11 @@
   <!-- Synced Calendars Strip -->
   <section class="calendar-strip">
     <div class="container">
-      <div class="calendar-strip-title">Integriert sich sicher in deine bestehenden Kalender</div>
+      <div class="calendar-strip-copy">
+        <p class="calendar-strip-title">Google Calendar, Outlook und Apple Calendar verbinden</p>
+        <p class="calendar-strip-note">Alle drei gleichzeitig. Jeder verbundene Kalender wird gepr&uuml;ft, bevor ein
+          Termin vorgeschlagen wird. Was frei aussieht, ist auch frei.</p>
+      </div>
       <div class="calendar-logos">
         <div class="calendar-logo">
           <!-- Google Calendar Official SVG -->
@@ -111,7 +128,7 @@
               <path fill="#188038" d="M-3.75,148.882v31.579c0,8.724,7.066,15.789,15.789,15.789h31.579v-47.368H-3.75z"/>
               <path fill="#FBBC04" d="M148.882,43.618v105.263h47.368V43.618l-23.684-10.526L148.882,43.618z"/>
               <path fill="#1967D2" d="M196.25,43.618V12.039c0-8.724-7.066-15.789-15.789-15.789h-31.579v47.368H196.25z"/>
-              <text x="94" y="99" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="80" font-weight="700" fill="#1967D2" text-anchor="middle" dominant-baseline="central" class="google-cal-date">19</text>
+              <text x="96.25" y="96.25" dy="0.36em" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="72" font-weight="700" fill="#1967D2" text-anchor="middle" class="google-cal-date">19</text>
             </g>
           </svg>
           <span>Google Calendar</span>
@@ -163,130 +180,165 @@
     </div>
   </section>
 
-  <!-- How It Works Section (German) -->
+  <!-- Wie es funktioniert -->
   <section id="how-it-works" class="how-it-works-section">
     <div class="container">
-      <div class="section-header">
-        <h2>Wie es funktioniert</h2>
-        <p>Drei einfache Schritte zur Abstimmung mit Freunden - ohne Einschränkung deines Datenschutzes.</p>
+      <div class="section-head">
+        <p class="eyebrow">Wie es funktioniert</p>
+        <h2>Drei Schritte, dann ist die Einladung raus.</h2>
+        <p>Keine Umfrage ausf&uuml;llen, kein Doodle-Link, kein Hinterherlaufen hinter der einen Person, die nie antwortet.</p>
       </div>
 
       <div class="steps-grid">
         <div class="step-card">
           <div class="step-num">1</div>
-          <h3>Sicher verbinden</h3>
-          <p>Verbinde deine Kalender sicher. Unsere App arbeitet streng lokal auf deinem Gerät und liest ausschließlich
-            Frei-/Gebucht-Zeiten aus.</p>
-          <div class="step-visual">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent);">
-              <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
-              <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-            </svg>
-          </div>
+          <h3>Kalender verbinden</h3>
+          <p>Verkn&uuml;pfe Google Calendar, Outlook oder Apple Calendar. Wir lesen, wann deine Termine anfangen und
+            enden. Was drinsteht, wird nie gespeichert.</p>
+          <span class="step-note">Google &middot; Outlook &middot; Apple</span>
         </div>
 
         <div class="step-card">
           <div class="step-num">2</div>
-          <h3>Frag die KI</h3>
-          <p>Gib einfach in natürlicher Alltagssprache ein, was du willst: „Finde Kaffeeslots mit Sarah für nächsten
-            Dienstag.“</p>
-          <div class="step-visual">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent);">
-              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-            </svg>
-          </div>
+          <h3>Sag, was du willst</h3>
+          <p>&bdquo;N&auml;chste Woche zwei Stunden Kaffee mit Sarah&ldquo; ist eine vollst&auml;ndige Anfrage. Mehr Bedienung gibt es nicht.</p>
+          <span class="step-note">Nat&uuml;rliche Sprache</span>
         </div>
 
         <div class="step-card">
           <div class="step-num">3</div>
-          <h3>Direkt buchen</h3>
-          <p>CalendAIr berechnet perfekte Überschneidungen und versendet Kalendereinladungen. Kein manuelles Nachlaufen
-            mehr.</p>
-          <div class="step-visual">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent);">
-              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-              <polyline points="22 4 12 14.01 9 11.01" />
-            </svg>
-          </div>
+          <h3>Termin annehmen, fertig</h3>
+          <p>Du bekommst die Zeiten, die allen passen. Das Annehmen tr&auml;gt einen echten Termin in jeden verbundenen
+            Kalender ein.</p>
+          <span class="step-note">Echte Kalendertermine</span>
         </div>
       </div>
+
+      <!-- Der Mechanismus hinter Schritt 3, als Diagramm. Bewusst kein
+           App-Screen - die zeigen die beiden Phones im Hero. -->
+      <figure class="match-panel">
+        <figcaption class="match-panel-copy">
+          <h3>Wie ein Termin gefunden wird</h3>
+          <p>Die verbundenen Kalender aller Beteiligten werden &uuml;bereinandergelegt. Was danach noch &uuml;berall
+            frei ist, wird dir vorgeschlagen. Sonst nichts.</p>
+        </figcaption>
+
+        <div class="slot-finder">
+          <div class="sf-head">
+            <span class="sf-title">Gemeinsame Zeit</span>
+            <span class="sf-date">Di 26.</span>
+          </div>
+          <div class="sf-scale"><span>9</span><span>12</span><span>15</span><span>18</span><span>21</span></div>
+          <div class="sf-row">
+            <span class="sf-name">Du</span>
+            <div class="sf-lane">
+              <i class="sf-busy" style="grid-column:1/3"></i>
+              <i class="sf-busy" style="grid-column:4/5"></i>
+              <i class="sf-busy" style="grid-column:10/12"></i>
+            </div>
+          </div>
+          <div class="sf-row">
+            <span class="sf-name">Sarah</span>
+            <div class="sf-lane">
+              <i class="sf-busy" style="grid-column:1/2"></i>
+              <i class="sf-busy" style="grid-column:5/7"></i>
+              <i class="sf-busy" style="grid-column:11/13"></i>
+            </div>
+          </div>
+          <div class="sf-row sf-row--match">
+            <span class="sf-name">Match</span>
+            <div class="sf-lane">
+              <i class="sf-free" style="grid-column:7/9"></i>
+            </div>
+          </div>
+          <p class="sf-result">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="8 12 11 15 16 9" />
+            </svg>
+            15:00 &ndash; 17:00 Uhr &middot; bei beiden frei
+          </p>
+        </div>
+      </figure>
     </div>
   </section>
 
-  <!-- Features Grid Section (German) -->
+  <!-- Funktionen -->
   <section id="features" class="features-section">
     <div class="container">
-      <div class="section-header">
-        <h2>Für Kontakte gebaut. Für Datenschutz entwickelt.</h2>
-        <p>Ein smarter, eleganter Assistent, der Termine abstimmt und gleichzeitig deine Daten schützt.</p>
+      <div class="section-head">
+        <p class="eyebrow">Was du bekommst</p>
+        <h2>Gebaut f&uuml;rs Treffen. Entworfen, m&ouml;glichst wenig zu wissen.</h2>
+        <p>Abstimmung &uuml;ber alle deine Kalender hinweg, ohne dass deine Termine sie verlassen.</p>
       </div>
 
       <div class="features-grid">
         <article class="feature-card">
-          <div class="feature-icon-wrapper">
+          <div class="feature-head">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round">
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
             </svg>
+            <h3>Datenschutz ist eingebaut</h3>
           </div>
-          <h3>Datenschutz von Anfang an</h3>
-          <p>Für einen Terminvorschlag nutzen wir nur die Frei-/Gebucht-Zeiten deiner bestehenden Termine. Deren Titel,
-            Notizen, Orte und Teilnehmerlisten speichern wir nie in unseren Datenbanken und zeigen sie niemandem.</p>
+          <p>F&uuml;r einen Terminvorschlag nutzen wir nur, wann deine bestehenden Termine anfangen und enden. Titel,
+            Notizen, Orte und Teilnehmerlisten werden nie in unseren Datenbanken gespeichert und niemandem gezeigt.</p>
         </article>
 
         <article class="feature-card">
-          <div class="feature-icon-wrapper">
+          <div class="feature-head">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round">
               <polygon points="12 2 2 7 12 12 22 7 12 2" />
               <polyline points="2 17 12 22 22 17" />
               <polyline points="2 12 12 17 22 12" />
             </svg>
+            <h3>Alle Kalender gleichzeitig</h3>
           </div>
-          <h3>Einheitliche Synchronisation</h3>
-          <p>Synchronisiere all deine Kalendernetzwerke parallel. Verbinde Google Calendar, Microsoft Outlook und den
-            Apple iCloud-Kalender gleichzeitig, um Doppelbuchungen auszuschließen.</p>
+          <p>Google Calendar, Microsoft Outlook und Apple iCloud Kalender werden parallel gepr&uuml;ft. Ein Termin, der
+            frei aussieht, ist auch wirklich frei.</p>
         </article>
 
         <article class="feature-card">
-          <div class="feature-icon-wrapper">
+          <div class="feature-head">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round">
               <circle cx="12" cy="12" r="10" />
               <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
               <line x1="12" y1="17" x2="12.01" y2="17" />
             </svg>
+            <h3>Einfach gesagt statt geklickt</h3>
           </div>
-          <h3>Smarte KI-Verarbeitung</h3>
-          <p>Frage in ganz normaler Alltagssprache. Unsere sichere Verfügbarkeits-Engine übersetzt Daten, Zeiträume,
-            Dauer und Namen mühelos in saubere Terminvorschläge.</p>
+          <p>Datum, Zeitraum und Dauer werden direkt aus deinem Satz gelesen. Nur dieser Satz geht an Google Gemini, um
+            daraus Zeitfenster zu machen. Dein Kalender, deine Termine und die Personen, die du einl&auml;dst, werden nicht &uuml;bertragen.</p>
         </article>
 
         <article class="feature-card">
-          <div class="feature-icon-wrapper">
+          <div class="feature-head">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round">
-              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
-              <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
             </svg>
+            <h3>Deine Leute, ein Tipp entfernt</h3>
           </div>
-          <h3>Automatisierte Erinnerungen</h3>
-          <p>Genug davon, dass Freunde vergessen zu antworten? CalendAIr übernimmt automatisch sanfte, höfliche
-            Erinnerungen zum optimalen Zeitpunkt, um Termine zu sichern.</p>
+          <p>Einmal per Einladungscode verbinden, danach direkt &uuml;ber Quick Meet starten. Keine E-Mail-Ketten, kein
+            st&auml;ndiges Neu-Hinzuf&uuml;gen derselben Personen.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Accordion FAQ Section (German) -->
+  <!-- FAQ (German) -->
   <section id="faq" class="faq-section">
     <div class="container faq-wrapper">
-      <div class="section-header">
-        <h2>Häufig gestellte Fragen</h2>
-        <p>Antworten auf die häufigsten Fragen zu Einstieg, Funktionen und Sicherheit.</p>
+      <div class="section-head">
+        <p class="eyebrow">Fragen</p>
+        <h2>Was zuerst gefragt wird.</h2>
+        <p>Meistens geht es um Daten. Zu Recht. <a href="/de/faq.html">Die vollst&auml;ndige FAQ</a> geht weiter ins Detail.</p>
       </div>
 
       <div class="faq">
@@ -309,9 +361,10 @@
           <div class="faq-answer">
             <p><strong>Ja. Datenschutz und DSGVO-Konformität bilden das Fundament von CalendAIr.</strong></p>
             <ul>
-              <li>Um einen Termin zu finden, müssen unsere Server in deinen Kalender schauen &mdash; aber nur auf die
-                Frei-/Gebucht-Zeiten. Titel, Orte, Notizen und Teilnehmerlisten deiner bestehenden Termine speichern wir
-                nie in unseren Datenbanken und zeigen sie niemandem.</li>
+              <li>Um einen Termin zu finden, rufen unsere Server die API deines Kalenderanbieters auf und ermitteln
+                daraus, wann du belegt bist. Titel, Orte, Notizen und Teilnehmerlisten deiner bestehenden Termine
+                speichern wir nie in unseren Datenbanken und zeigen sie niemandem. Sie werden nur im
+                Arbeitsspeicher verarbeitet und danach verworfen.</li>
               <li>Meetings, die du in CalendAIr anlegst, sind etwas anderes: Titel, Beschreibung und Eingeladene
                 speichern wir, damit wir sie den eingeladenen Personen zeigen und den Termin in die verbundenen
                 Kalender schreiben können.</li>
@@ -336,13 +389,12 @@
     </div>
   </section>
 
-  <!-- Bottom CTA Banner Section (German) -->
+  <!-- Download (German) -->
   <section id="download" class="cta-section">
     <div class="container">
       <div class="cta-card">
-        <h2>Beende das Planungschaos heute</h2>
-        <p>Lade CalendAIr auf dein Smartphone herunter, synchronisiere deine Kalender sicher und starte sofort deine
-          Terminplanung mit KI.</p>
+        <h2>Nicht mehr fragen. Einfach treffen.</h2>
+        <p>CalendAIr installieren, Kalender verbinden &ndash; und das n&auml;chste Treffen regelt sich selbst.</p>
         <div class="store-badges">
           <a class="store-badge" href="https://apps.apple.com" target="_blank" rel="noopener">
             <img src="/assets/apple-store-de.svg" alt="Im App Store herunterladen">
@@ -355,15 +407,16 @@
     </div>
   </section>
 
-  <!-- Premium Structured Footer (German) -->
+  <!-- Footer (German) -->
   <footer>
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="/de/" class="logo">
-            <img src="/assets/logo-with-slogan.svg" alt="CalendAIr Logo" class="footer-logo-img">
+            <img src="/assets/logo_without_slogan.svg" alt="CalendAIr" class="footer-logo-img">
           </a>
-          <p>Weniger planen. Mehr treffen. Sichere, DSGVO-konforme KI-Terminplanung.</p>
+          <p class="footer-claim">Plan Less. Meet More.</p>
+          <p>DSGVO-konforme Terminabstimmung, gemacht in D&uuml;sseldorf.</p>
         </div>
         <div class="footer-links">
           <strong>Rechtliches & Compliance</strong>
