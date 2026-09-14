@@ -1471,12 +1471,6 @@ footer {
   display: block;
 }
 
-.invite-from {
-  color: var(--ink);
-  font-weight: 600;
-  font-size: 1.02rem;
-  margin: 0 0 1.75rem;
-}
 
 .invite-code-block {
   margin: 0 auto 1.75rem;
@@ -1775,4 +1769,163 @@ footer {
 
 .fi-gb {
   background-image: url("/assets/flags/gb.svg");
+}
+
+/* ---------------------------------------------------------------
+   Legal documents: table of contents, per-step field lists,
+   region tags, highlighted notices. Used by the privacy policy.
+   No new hues - only existing tokens.
+   --------------------------------------------------------------- */
+
+.legal h2[id],
+.legal h3[id] {
+  scroll-margin-top: 5.5rem;
+}
+
+.is-app .legal h2[id],
+.is-app .legal h3[id] {
+  scroll-margin-top: 1rem;
+}
+
+/* Table of contents */
+.legal-toc {
+  background: var(--grey-light);
+  border-radius: var(--r-md);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.legal-toc h2 {
+  font-size: 1rem !important;
+  margin-top: 0 !important;
+  margin-bottom: 0.75rem !important;
+}
+
+.legal-toc ol {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: var(--grey-dark);
+}
+
+.legal-toc > ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+.legal-toc > ol > li {
+  margin-bottom: 0.9rem;
+}
+
+.legal-toc > ol > li:last-child {
+  margin-bottom: 0;
+}
+
+.legal-toc strong {
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.legal-toc li {
+  margin-bottom: 0.3rem;
+  line-height: 1.5;
+}
+
+.legal-toc a {
+  color: var(--grey-dark);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.legal-toc a:hover,
+.legal-toc a:focus-visible {
+  color: var(--teal);
+  border-bottom-color: var(--teal-30);
+}
+
+/* Per-step field list */
+.legal-fields {
+  margin: 0 0 1.75rem;
+  padding: 0;
+}
+
+.legal-fields dt {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-top: 1rem;
+}
+
+.legal-fields dt:first-child {
+  margin-top: 0;
+}
+
+.legal-fields dd {
+  margin: 0.3rem 0 0;
+  color: var(--grey-dark);
+}
+
+.legal-fields dd ul {
+  margin: 0.4rem 0 0;
+  padding-left: 1.25rem;
+}
+
+/* Region tag in a heading: EU / EU + USA */
+.legal-tag {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.6rem;
+  padding: 0.15em 0.6em;
+  border-radius: var(--r-xs);
+  background: var(--teal-10);
+  color: var(--teal);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+a.legal-tag:hover,
+a.legal-tag:focus-visible {
+  background: var(--teal-15);
+}
+
+/* Highlighted notice, e.g. the Art. 21 objection right */
+.legal-callout {
+  border-left: 3px solid var(--teal);
+  background: var(--teal-05);
+  border-radius: 0 var(--r-md) var(--r-md) 0;
+  padding: 1.1rem 1.35rem;
+  margin-bottom: 1.5rem;
+}
+
+.legal-callout > *:last-child {
+  margin-bottom: 0;
+}
+
+/* Back-to-top link after each part */
+.legal-top {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--grey-medium);
+  text-decoration: none;
+  margin: -0.5rem 0 2.5rem;
+}
+
+.legal-top:hover,
+.legal-top:focus-visible {
+  color: var(--teal);
+}
+
+@media (max-width: 640px) {
+  .legal-toc {
+    padding: 1rem 1.15rem;
+  }
+
+  .legal-tag {
+    margin-left: 0.4rem;
+  }
 }

@@ -156,6 +156,17 @@ grep -rn $'\u2014\|&mdash;' --include='*.html' .
     an external asset sends every visitor's IP to that provider before consent, and the privacy
     policy states that the site embeds no third-party content. Inter lives in
     `/assets/fonts/` (see its README), the two language-switcher flags in `/assets/flags/`.
+9.  **No compliance claims in marketing copy**: Never write "GDPR-compliant", "DSGVO-konform",
+    "GDPR-proof" or similar. Following the GDPR is a legal duty; advertising with it is "Werbung
+    mit Selbstverständlichkeiten", actionable under § 5 UWG, and it implies competitors break the
+    law. Say something checkable instead: where the servers are, what we do not store, that ads
+    need consent. Link the FAQ entries `?q=minimal-data` and `?q=where-data` for the detail.
+    The same applies to absolute security claims ("end-to-end secure", "100% safe").
+10. **Legal pages follow the customer journey**: the privacy policy is built as Part A (overview),
+    Part B (one step per thing the user does, each with the same six fields: what we process, what
+    for, legal basis, recipients, how long, do you have to provide it) and Part C (general).
+    When a feature changes, update the matching B-step - and keep DE and EN structurally identical:
+    same section IDs, same number of `<h2>`, `<dt>`, `<dd>`, `<p>` and `<li>` elements.
 
 ---
 *Created by Antigravity AI*

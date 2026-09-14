@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Datenschutzerklärung | CalendAIr</title>
-  <meta name="description" content="Wie CalendAIr personenbezogene Daten verarbeitet, einschließlich Kalenderzugriff, Google Limited Use und deiner DSGVO-Rechte.">
+  <meta name="description" content="Wie CalendAIr personenbezogene Daten verarbeitet – Schritt für Schritt, von der Einladung bis zur Kontolöschung.">
   <link rel="stylesheet" href="/assets/fonts.css">
   <link rel="stylesheet" href="/assets/site.css">
   <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <main class="page">
+  <main class="page" id="top">
     <div class="page-head">
       <div>
         <div class="breadcrumbs">
@@ -34,153 +34,371 @@
     </div>
 
     <section class="legal">
-      <p class="legal-meta"><strong>Stand: <time datetime="2026-09-06">6. September 2026</time></strong></p>
+      <p class="legal-meta"><strong>Stand: <time datetime="2026-09-14">14. September 2026</time></strong></p>
 
-      <p>Diese Erklärung beschreibt, wie die <strong>CalendAIr H.I. UG (haftungsbeschränkt)</strong> („CalendAIr“, „wir“) personenbezogene Daten verarbeitet, wenn du die CalendAIr-App und die Website <a href="https://calendair.de">calendair.de</a> nutzt.</p>
-      <p>Sie ist keine Rechtsberatung. Zwingendes Recht geht im Zweifel vor.</p>
+      <p>Diese Hinweise beschreiben, wie die <strong>CalendAIr H.I. UG (haftungsbeschränkt)</strong> („CalendAIr“, „wir“) personenbezogene Daten verarbeitet, wenn du die CalendAIr-App und die Website <a href="https://calendair.de">calendair.de</a> nutzt.</p>
+      <p>Sie sind entlang deiner Schritte in der App aufgebaut: von der Einladung bis zur Kontolöschung. Zu jedem Schritt steht immer dasselbe &ndash; was wir verarbeiten, wozu, auf welcher Rechtsgrundlage, wer es bekommt, wie lange wir es behalten und ob du es bereitstellen musst.</p>
 
-      <h2 id="verantwortlicher">1. Verantwortlicher</h2>
+      <h2 id="a1-controller">A1 &middot; Wer wir sind und wie du uns erreichst</h2>
       <address>
         CalendAIr H.I. UG (haftungsbeschränkt)<br>
         Fährstraße 217<br>
         40221 Düsseldorf<br>
         Deutschland
       </address>
-      <p>E-Mail: <a href="mailto:support@calendair.de">support@calendair.de</a></p>
+      <p>E-Mail: <a href="mailto:support@calendair.de">support@calendair.de</a>. Weitere Angaben stehen im <a href="/de/impressum.html">Impressum</a>.</p>
+      <p>Zuständige Aufsichtsbehörde ist die <strong>Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen (LDI NRW)</strong>. Du kannst dich auch an die Behörde deines Wohnsitzlandes wenden.</p>
 
-      <h2 id="wofuer-die-app-da-ist">2. Wofür die App da ist</h2>
-      <p>CalendAIr hilft dabei, gemeinsame Termine zu finden. Du meldest dich an, verbindest Kalender, lädst andere ein und legst Meetings an. Optional: KI-gestützte Zeitvorschläge, Push-Nachrichten, In-App-Käufe sowie (mit Einwilligung) Analyse und Werbung.</p>
-
-      <h2 id="kalender">3. So nutzen wir deinen Kalender</h2>
-      <p>Das ist der Kern der App. Bitte lies das, bevor du einen Kalender verbindest.</p>
-      <p>Wenn du Google Kalender, Outlook oder iCloud-Kalender verbindest, rufen <strong>unsere Server</strong> die API des Anbieters auf. Wir nutzen <strong>nicht</strong> die iOS-EventKit-Berechtigung und <strong>nicht</strong> die Android-Systemkalender-Berechtigung.</p>
-
-      <h3>Termine, die bereits in deinem Kalender stehen</h3>
+      <h2 id="a2-summary">A2 &middot; Das Wichtigste in Kürze</h2>
       <ul>
-        <li>Wir rufen Termindaten ab, um zu erkennen, wann du belegt bist (Beginn und Ende sowie ob ein Termin abgesagt, als frei markiert oder von dir abgelehnt wurde).</li>
-        <li>Titel, Beschreibungen, Orte und Teilnehmerlisten <strong>dieser bestehenden Termine</strong> speichern wir <strong>nicht</strong> in unseren Datenbanken.</li>
-        <li>Diesen bestehenden Kalenderinhalt zeigen wir <strong>keinen</strong> anderen CalendAIr-Nutzerinnen und -Nutzern und <strong>keinen</strong> Werbepartnern.</li>
-        <li>Die Daten werden für die Verfügbarkeitsberechnung im Arbeitsspeicher unserer Server verarbeitet und danach verworfen (in technischen Fehlerprotokollen können Hinweise auf Störungen stehen; damit wird dein bestehender Kalender nicht rekonstruiert).</li>
+        <li>Unsere Server stehen in der <strong>EU</strong> (Frankfurt am Main). Einzelne Funktionen laufen über Google, Apple und Microsoft und verarbeiten auch außerhalb der EU &ndash; siehe <a href="#c3-transfers">C3</a>.</li>
+        <li>Von Terminen, die <strong>schon in deinem Kalender stehen</strong>, nutzen wir nur, wann sie anfangen und enden. Titel, Notizen, Orte und Teilnehmerlisten speichern wir nicht und zeigen sie niemandem.</li>
+        <li>Meetings, die du <strong>in CalendAIr anlegst</strong>, speichern wir &ndash; wir müssen sie den eingeladenen Personen zeigen und in die Kalender schreiben.</li>
+        <li>Die KI bekommt nur den Satz, den du tippst. Nicht deinen Kalender, nicht deine Kontakte.</li>
+        <li>Wir verkaufen keine Daten. Werbung siehst du nur in der kostenlosen Version, personalisiert nur mit deiner Einwilligung.</li>
+        <li>Du kannst dein Konto jederzeit löschen &ndash; in der App oder über <a href="/de/konto-loeschen.html">diese Seite</a>.</li>
       </ul>
 
-      <h3>Meetings, die du in CalendAIr anlegst</h3>
-      <ul>
-        <li>Wir speichern Titel, Beschreibung, Zeiten und die Personen, die du einlädst.</li>
-        <li>Eingeladene sehen das in der App. Push-Nachrichten können Meeting-Titel und Namen enthalten.</li>
-        <li>Nach einer Zusage <strong>schreiben</strong> wir Titel, Beschreibung, Zeiten und Teilnehmer-E-Mails in die verbundenen Kalender, damit der Termin in Google, Outlook oder iCloud liegt.</li>
-      </ul>
+      <h2 id="a3-toc">A3 &middot; Inhalt</h2>
+      <nav class="legal-toc" aria-label="Inhaltsverzeichnis">
+        <ol>
+          <li>
+            <strong>Teil A &ndash; Überblick</strong>
+            <ul>
+              <li><a href="#a1-controller">A1 Wer wir sind</a></li>
+              <li><a href="#a2-summary">A2 Das Wichtigste in Kürze</a></li>
+              <li><a href="#a4-hosting">A4 Wo das alles läuft</a></li>
+            </ul>
+          </li>
+          <li>
+            <strong>Teil B &ndash; Deine Schritte mit CalendAIr</strong>
+            <ul>
+              <li><a href="#b0-invited">B0 Du wurdest eingeladen</a></li>
+              <li><a href="#b1-install">B1 Du installierst und öffnest die App</a></li>
+              <li><a href="#b2-account">B2 Du legst ein Konto an</a></li>
+              <li><a href="#b3-calendar">B3 Du verbindest einen Kalender</a></li>
+              <li><a href="#b4-friends">B4 Du verbindest dich mit Freunden</a></li>
+              <li><a href="#b5-meeting">B5 Du findest einen Termin und legst ein Meeting an</a></li>
+              <li><a href="#b6-notifications">B6 Du erhältst Benachrichtigungen</a></li>
+              <li><a href="#b7-premium">B7 Du kaufst Premium</a></li>
+              <li><a href="#b8-ads">B8 Du siehst Werbung</a></li>
+              <li><a href="#b9-contact">B9 Du schreibst uns</a></li>
+              <li><a href="#b10-delete">B10 Du löschst dein Konto</a></li>
+            </ul>
+          </li>
+          <li>
+            <strong>Teil C &ndash; Allgemeines</strong>
+            <ul>
+              <li><a href="#c1-website">C1 Die Website calendair.de</a></li>
+              <li><a href="#c2-recipients">C2 Empfänger im Überblick</a></li>
+              <li><a href="#c3-transfers">C3 Verarbeitung außerhalb der EU</a></li>
+              <li><a href="#c4-google-limited-use">C4 Google API Services User Data Policy</a></li>
+              <li><a href="#c5-logs">C5 Betriebs- und Sicherheitsprotokolle</a></li>
+              <li><a href="#c6-security">C6 Sicherheit</a></li>
+              <li><a href="#c7-objection">C7 Dein Widerspruchsrecht</a></li>
+              <li><a href="#c8-rights">C8 Deine weiteren Rechte</a></li>
+              <li><a href="#c9-automated">C9 Keine automatisierten Entscheidungen</a></li>
+              <li><a href="#c10-children">C10 Kinder und Jugendliche</a></li>
+              <li><a href="#c11-changes">C11 Änderungen dieser Hinweise</a></li>
+            </ul>
+          </li>
+        </ol>
+      </nav>
 
-      <h3>Google-Kontakte (nur wenn du Google Kalender verbindest)</h3>
-      <ul>
-        <li>Wir können einen Kontakt (E-Mail und Anzeigename) in einer Gruppe „CalendAIr Connections“ suchen oder anlegen.</li>
-        <li>Zweck: Einladungen aus CalendAIr sollen seltener als unbekannter Absender / Spam behandelt werden.</li>
-        <li>Deine Kontakte nutzen wir nicht für Werbung.</li>
-      </ul>
+      <h2 id="a4-hosting">A4 &middot; Wo das alles läuft</h2>
+      <p>Alle in Teil B beschriebenen Verarbeitungen laufen auf unserer Infrastruktur bei <strong>Amazon Web Services</strong> in Frankfurt am Main (Region <code>eu-central-1</code>), sofern beim einzelnen Schritt nichts anderes steht. Bei jedem Schritt nennen wir deshalb nur die Empfänger, die <em>zusätzlich</em> dazukommen. Die vollständige Übersicht steht in <a href="#c2-recipients">C2</a>.</p>
+      <p>Die Kennzeichnung neben jeder Überschrift zeigt, wo die Daten des jeweiligen Schritts verarbeitet werden: <span class="legal-tag">EU</span> bleibt in der EU, <span class="legal-tag">EU + Drittland</span> geht darüber hinaus &ndash; Einzelheiten in <a href="#c3-transfers">C3</a>.</p>
+      <p><strong>Was du bereitstellen musst.</strong> Nur zwei Dinge sind nötig: eine E-Mail-Adresse für dein Konto und ein verbundener Kalender, damit wir freie Zeiten berechnen können. Ohne das Erste gibt es kein Konto, ohne das Zweite keine Terminsuche. Alles andere ist freiwillig, und du kannst die App auch ohne nutzen. Eine gesetzliche Pflicht, uns Daten zu geben, besteht nicht.</p>
 
-      <h3>Tokens und Zugangsdaten</h3>
-      <ul>
-        <li><strong>Google und Outlook:</strong> Wir speichern verschlüsselte Refresh-Tokens, damit die Kalenderverbindung bestehen bleibt.</li>
-        <li><strong>iCloud:</strong> Wir speichern verschlüsselte Zugangsdaten für CalDAV (Apple-ID-Benutzername und das App-spezifische Passwort, das du eingibst).</li>
-        <li>Du kannst den Kalender jederzeit in der App trennen. Zusätzlich kannst du den Zugriff in deinem Google- oder Microsoft-Konto widerrufen oder das App-Passwort in deiner Apple-ID löschen.</li>
-      </ul>
-      <p>Wenn du einen Kalender trennst oder dein CalendAIr-Konto löschst, löschen wir <strong>nicht</strong> Termine, die bereits in Google, Outlook oder iCloud geschrieben wurden. Wir entfernen nur unsere eigenen Datensätze. Siehe die <a href="/de/nutzungsbedingungen.html">Nutzungsbedingungen</a>.</p>
+      <h2 id="b0-invited">B0 &middot; Du wurdest eingeladen <a class="legal-tag" href="#c3-transfers">EU + Drittland</a></h2>
+      <p>Für viele ist das der erste Kontakt mit CalendAIr: Jemand schickt dir einen Einladungslink, bevor du die App überhaupt hast. Der Code darin stammt nicht von dir, sondern von der Person, die dich einlädt (Art. 14 Abs. 2 lit. f DSGVO). Einen Namen enthält der Link nicht.</p>
+      <dl class="legal-fields">
+        <dt>Was wir verarbeiten</dt>
+        <dd>Nur den Einladungscode. Er steht im Link, wird in deinem Browser angezeigt und nach der Installation in die App übernommen, damit du ihn nicht abtippen musst.</dd>
+        <dt>Rechtsgrundlage</dt>
+        <dd>Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse ist, dass eine Einladung ohne Umwege ankommt.</dd>
+        <dt>Empfänger</dt>
+        <dd>Der Code steht in der Adresszeile. Öffnest du den Link, erscheint diese Adresse in den Server-Protokollen von <strong>GitHub</strong>, wo unsere Website liegt.</dd>
+        <dt>Wie lange</dt>
+        <dd>Wir speichern dabei nichts. Der Code selbst läuft in unserem System nach etwa 25 Stunden ab.</dd>
+      </dl>
 
-      <h2 id="weitere-daten">4. Weitere Daten, die wir verarbeiten</h2>
-      <p><strong>Konto (Anmeldung mit Google oder Apple über AWS Cognito)</strong><br>
-        E-Mail-Adresse (Apple kann eine Hide-My-Email-Adresse liefern), Name, URL des Profilbilds, Spracheinstellung und eine Nutzer-ID.</p>
-      <p><strong>Verbindungen zwischen Nutzerinnen und Nutzern</strong><br>
-        Einladungscodes (sie laufen nach etwa einem Tag ab) und wer mit wem verbunden ist.</p>
-      <p><strong>Geräte-Benachrichtigungen</strong><br>
-        Ein Push-Token, Plattform und Sprache, damit wir Meeting-Updates schicken können.</p>
-      <p><strong>Abos</strong><br>
-        Ob du Premium hast, Ablaufdatum, Store-Plattform und die Kennungen, die App Store / Google Play für Wiederherstellung und Prüfung brauchen.</p>
-      <p><strong>Feedback</strong><br>
-        Was du uns im In-App-Formular schickst.</p>
-      <p><strong>KI-Vorschläge (Google Gemini)</strong><br>
-        Wenn du eine Anfrage in Alltagssprache tippst (z. B. „nächste Woche Dienstag nachmittag“), senden wir <strong>diesen Text</strong> zusammen mit deiner Zeitzone und der App-Sprache an Google Gemini, damit daraus Zeitfenster werden. Deinen Kalender, die Titel deiner Termine, deinen Namen oder die Namen der eingeladenen Personen schicken wir <strong>nicht</strong> an Gemini.<br>
-        Deine Anfrage und die Auswertung, die wir zurückbekommen, protokollieren wir zusammen mit deiner Nutzer-ID, damit wir Fehldeutungen erkennen und das Verständnis der App verbessern können. Diese Protokolleinträge löschen wir nach etwa 30 Tagen; für Werbung nutzen wir sie nicht.</p>
-      <p><strong>Nutzungszähler</strong><br>
-        Wie viele KI-Anfragen du im laufenden Zeitraum gestellt hast, damit wir die Grenzen des kostenlosen Zugangs und von Premium anwenden können.</p>
-      <p><strong>App-Diagnose und Werbung (soweit Einwilligung nötig)</strong><br>
-        Firebase Analytics, Firebase Crashlytics und Google AdMob. Willigst du in Werbung ein, verarbeitet Google die Werbe-Kennung deines Geräts (IDFA unter iOS, Werbe-ID unter Android) und technische Daten der Werbeanfrage, um Anzeigen auszuliefern und &ndash; wenn du es erlaubst &ndash; zu personalisieren. Unter iOS fragen wir das zusätzlich über Apples Dialog zur App-Tracking-Transparenz ab. Ohne Einwilligung ist die Werbung nicht personalisiert. Kalender- und Meeting-Inhalte gehen nie an diese Dienste. Du steuerst das in der App (Einwilligung / „Cookie-Einstellungen“); mit Premium entfällt die Werbung ganz.</p>
-      <p><strong>Daten auf deinem Gerät</strong><br>
-        Die App legt lokal eine Kopie deines Profils ab (Name, E-Mail, URL des Profilbilds, Abo-Status), dazu den Status deiner Kalenderverbindung, deine Sprache, deine Einwilligungsentscheidungen und einen offenen Einladungscode, damit sie ohne vollständiges Nachladen startet. Das bleibt auf deinem Gerät und verschwindet, wenn du die App löschst.</p>
-      <p><strong>Website</strong><br>
-        <a href="https://calendair.de">calendair.de</a> ist eine statische Seite auf <strong>GitHub Pages</strong> (GitHub, Inc.); GitHub verarbeitet dabei deine IP-Adresse und Anfragedaten in Server-Protokollen, um die Seiten auszuliefern und Angriffe abzuwehren. Schriften, Icons und alle übrigen Dateien liefern wir von unserer eigenen Domain aus: Die Seite bindet <strong>keine</strong> Inhalte von Drittanbietern ein, setzt keine eigenen Cookies und keine Analyse- oder Werbe-Cookies. Ein Einladungslink enthält den Einladungscode und, wenn deine Freundin oder dein Freund ihn so geteilt hat, den Vornamen der einladenden Person in der URL; das wird nur in deinem Browser angezeigt und von uns nicht gespeichert.</p>
-      <p><strong>Sicherheit und Betrieb</strong><br>
-        Wir führen technische Protokolle (z. B. Fehlermeldungen, Nutzer-ID, Zeitstempel), um den Dienst zu betreiben, abzusichern und zu debuggen. Kalenderinhalte, Meeting-Titel, Zugriffstoken und Passwörter protokollieren wir nicht. Der einzige Inhalt, den wir protokollieren, ist die Terminanfrage, die du tippst &ndash; siehe „KI-Vorschläge“ oben.</p>
+      <h2 id="b1-install">B1 &middot; Du installierst und öffnest die App <a class="legal-tag" href="#c3-transfers">EU + Drittland</a></h2>
+      <p>Beim ersten Start fragt dich die App nach deiner Einwilligung für Analyse und Werbung. Für alles, was dabei auf deinem Gerät gespeichert oder ausgelesen wird, gilt zuerst § 25 TDDDG und erst danach die DSGVO.</p>
+      <dl class="legal-fields">
+        <dt>Was wir verarbeiten</dt>
+        <dd>
+          <ul>
+            <li><strong>Auf deinem Gerät:</strong> eine Kopie deines Profils (Name, E-Mail, Bild-URL, Abo-Status), der Status deiner Kalenderverbindung, deine Sprache, deine Einwilligungsentscheidungen und ein noch offener Einladungscode.</li>
+            <li><strong>Absturzberichte (Firebase Crashlytics):</strong> Gerätemodell, Betriebssystemversion, App-Version, Zeitpunkt und die technische Fehlerspur.</li>
+            <li><strong>Eine App-Installations-Kennung</strong>, die Firebase beim ersten Start erzeugt.</li>
+            <li><strong>Nutzungsstatistik (Firebase Analytics):</strong> nur, wenn du einwilligst.</li>
+          </ul>
+        </dd>
+        <dt>Wozu</dt>
+        <dd>Damit die App ohne vollständiges Nachladen startet, damit wir Abstürze finden und beheben und &ndash; mit deiner Einwilligung &ndash; um zu verstehen, welche Funktionen genutzt werden.</dd>
+        <dt>Rechtsgrundlage</dt>
+        <dd>Profil-Cache, Sprache, Consent-Speicher und offener Einladungscode: § 25 Abs. 2 Nr. 2 TDDDG, weil sie für die von dir gewünschte Funktion unbedingt erforderlich sind, zusammen mit Art. 6 Abs. 1 lit. b DSGVO. Analyse und Absturzberichte: § 25 Abs. 1 TDDDG und Art. 6 Abs. 1 lit. a DSGVO &ndash; deine Einwilligung, die du jederzeit in den App-Einstellungen widerrufen kannst.</dd>
+        <dt>Empfänger</dt>
+        <dd>Google (Firebase Crashlytics, Firebase Analytics).</dd>
+        <dt>Wie lange</dt>
+        <dd>Die Daten auf deinem Gerät bleiben, bis du die App löschst. Absturz- und Analysedaten bei Firebase nach den dortigen Fristen, längstens 14 Monate.</dd>
+        <dt>Musst du das bereitstellen?</dt>
+        <dd>Analyse und Absturzberichte sind freiwillig. Lehnst du ab, funktioniert die App vollständig weiter &ndash; wir erfahren dann nur nicht, woran sie abgestürzt ist. Die lokale Speicherung ist technisch nötig; ohne sie müsstest du dich bei jedem Start neu anmelden.</dd>
+      </dl>
 
-      <h2 id="rechtsgrundlagen">5. Zwecke und Rechtsgrundlagen (DSGVO)</h2>
-      <ul>
-        <li><strong>Konto, Meetings, Kalender-Sync, Einladungen und Premium erbringen, die du angefragt hast</strong>: Art. 6 Abs. 1 lit. b DSGVO (Vertrag).</li>
-        <li><strong>Kalender und Kontakte verbinden sowie Werbung/Analyse, soweit wir dich fragen</strong>: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung). Du kannst die Einwilligung jederzeit widerrufen; die Rechtmäßigkeit bis zum Widerruf bleibt unberührt. Kalender-Einwilligung widerrufen heißt den Kalender trennen. Das ist nicht dasselbe wie das ganze Konto zu löschen.</li>
-        <li><strong>Sicherheit, Missbrauchsabwehr, Fehlersuche, Rechtsverteidigung sowie die Verbesserung, wie gut die KI Terminwünsche versteht</strong>: Art. 6 Abs. 1 lit. f DSGVO (berechtigte Interessen).</li>
-        <li><strong>Gesetzliche Pflichten</strong> (z. B. Steuer oder Store-Abrechnung): Art. 6 Abs. 1 lit. c DSGVO.</li>
-      </ul>
+      <h2 id="b2-account">B2 &middot; Du legst ein Konto an <a class="legal-tag" href="#c3-transfers">EU + Drittland</a></h2>
+      <p>Die Anmeldung läuft über <strong>AWS Cognito</strong>, mit deinem Google- oder Apple-Konto. Ein eigenes Passwort bei uns gibt es nicht.</p>
+      <dl class="legal-fields">
+        <dt>Was wir verarbeiten</dt>
+        <dd>E-Mail-Adresse, Name, die Adresse deines Profilbilds, deine Spracheinstellung, eine Nutzer-ID und die Kennung deines Google- bzw. Apple-Kontos. Meldest du dich mit Apple an und wählst „E-Mail-Adresse verbergen“, erhalten wir nur Apples Weiterleitungsadresse.</dd>
+        <dt>Wozu</dt>
+        <dd>Um dein Konto anzulegen, dich wiederzuerkennen, dir die App in deiner Sprache zu zeigen und dich anderen gegenüber darstellen zu können, die dich einladen. Neue Konten erhalten außerdem einen Zeitstempel, über den wir die 30 Tage Premium zum Einstieg verwalten.</dd>
+        <dt>Rechtsgrundlage</dt>
+        <dd>Art. 6 Abs. 1 lit. b DSGVO &ndash; ohne Konto können wir den Dienst nicht erbringen.</dd>
+        <dt>Empfänger</dt>
+        <dd>Google bzw. Apple als Anbieter der Anmeldung. Beide erfahren dabei in <strong>eigener Verantwortung</strong>, dass und wann du dich bei CalendAIr anmeldest, und verarbeiten das nach ihren eigenen Datenschutzhinweisen.</dd>
+        <dt>Wie lange</dt>
+        <dd>Solange dein Konto besteht. Nach der Löschung siehe <a href="#b10-delete">B10</a>.</dd>
+      </dl>
 
-      <h2 id="google-limited-use">6. Google API Services User Data Policy (Limited Use)</h2>
-      <p lang="en">The use of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+      <h2 id="b3-calendar">B3 &middot; Du verbindest einen Kalender <a class="legal-tag" href="#c3-transfers">EU + Drittland</a></h2>
+      <p>Das ist der Kern der App. Bitte lies diesen Abschnitt, bevor du einen Kalender verbindest.</p>
+      <p>Der Zugriff läuft <strong>über die Server des Anbieters</strong>, nicht über die Kalender-App auf deinem Telefon. Wir nutzen weder die iOS-Kalenderberechtigung (EventKit) noch die Android-Systemkalender-Berechtigung.</p>
+      <dl class="legal-fields">
+        <dt>Was wir verarbeiten</dt>
+        <dd>
+          <ul>
+            <li><strong>Von bestehenden Terminen:</strong> Beginn, Ende und den Status &ndash; also ob ein Termin abgesagt, als „frei“ markiert oder von dir abgelehnt wurde. <strong>Titel, Beschreibungen, Orte und Teilnehmerlisten speichern wir nicht.</strong> Sie werden für die Berechnung deiner freien Zeiten im Arbeitsspeicher verarbeitet und danach verworfen. Anderen Nutzerinnen und Nutzern und Werbepartnern zeigen wir sie nie.</li>
+            <li><strong>Zugangsdaten:</strong> bei Google und Outlook ein Zugriffstoken, bei iCloud deinen Apple-ID-Benutzernamen und das App-spezifische Passwort, das du eingibst. Beides speichern wir zusätzlich verschlüsselt.</li>
+            <li><strong>Deine Auswahl</strong>, welche Kalender berücksichtigt werden sollen.</li>
+          </ul>
+        </dd>
+        <dt>Wozu</dt>
+        <dd>Um zu berechnen, wann du frei bist, und um zugesagte Meetings in deinen Kalender zu schreiben. Das Token brauchen wir, damit die Verbindung bestehen bleibt und du sie nicht bei jedem Start neu herstellen musst.</dd>
+        <dt>Rechtsgrundlage</dt>
+        <dd>Art. 6 Abs. 1 lit. a DSGVO &ndash; deine Einwilligung, die du im Freigabedialog des jeweiligen Anbieters erteilst. Du kannst sie jederzeit widerrufen, indem du den Kalender in der App trennst; die Rechtmäßigkeit bis zum Widerruf bleibt unberührt. Einen Kalender zu trennen ist nicht dasselbe wie das Konto zu löschen.</dd>
+        <dt>Empfänger</dt>
+        <dd>Je nachdem, was du verbindest: Google (Google Kalender), Microsoft (Outlook über Microsoft Graph) oder Apple (iCloud über CalDAV). Bei Google fragen wir zusätzlich die Berechtigungen für Kontakte an &ndash; wofür, steht in <a href="#b4-friends">B4</a>.</dd>
+        <dt>Wie lange</dt>
+        <dd>Bis du den Kalender trennst oder dein Konto löschst. Dann entfernen wir Token und Zugangsdaten sofort, und unser Zugriff endet in diesem Moment.</dd>
+        <dt>Musst du das bereitstellen?</dt>
+        <dd>Nein, das ist deine Entscheidung. Ohne verbundenen Kalender können wir allerdings nicht berechnen, wann du frei bist &ndash; das ist die zentrale Funktion der App.</dd>
+      </dl>
+      <p>Du kannst den Zugriff zusätzlich direkt bei Google oder Microsoft widerrufen oder das App-spezifische Passwort in deinen Apple-ID-Einstellungen löschen. <strong>Termine, die bereits in deinen Kalender geschrieben wurden, bleiben dort</strong> &ndash; auch wenn du den Kalender trennst.</p>
+
+      <h2 id="b4-friends">B4 &middot; Du verbindest dich mit Freunden <a class="legal-tag" href="#c3-transfers">EU + Drittland</a></h2>
+      <p>Verbindungen entstehen nur über Einladungscodes. Wir lesen <strong>kein Adressbuch</strong> aus und verarbeiten keine Telefonnummern.</p>
+      <dl class="legal-fields">
+        <dt>Was wir verarbeiten</dt>
+        <dd>Einen sechsstelligen Einladungscode und die Information, wer mit wem verbunden ist. Wenn eine der beiden Personen Google Kalender verbunden hat, können wir außerdem einen Kontakt mit E-Mail-Adresse und Anzeigenamen in einer Gruppe namens „CalendAIr Connections“ im jeweiligen Google-Konto suchen oder anlegen.</dd>
+        <dt>Wozu</dt>
+        <dd>Damit ihr euch gegenseitig zu Meetings einladen könnt. Der Kontakteintrag sorgt dafür, dass Einladungen aus CalendAIr beim Empfänger nicht als unbekannter Absender im Spam landen. <strong>Das wirkt in beide Richtungen:</strong> Nimmt jemand deine Einladung an, können auch deine E-Mail-Adresse und dein Anzeigename als Kontakt in seinem Google-Konto angelegt werden. Für Werbung nutzen wir Kontaktdaten nicht.</dd>
+        <dt>Rechtsgrundlage</dt>
+        <dd>Für die Verbindung Art. 6 Abs. 1 lit. b DSGVO. Für den Kontakteintrag Art. 6 Abs. 1 lit. a DSGVO, weil er nur möglich ist, wenn du die Kontakte-Berechtigung im Google-Dialog erteilt hast.</dd>
+        <dt>Empfänger</dt>
+        <dd>Google, soweit ein Kontakteintrag angelegt oder gesucht wird.</dd>
+        <dt>Wie lange</dt>
+        <dd>Einladungscodes etwa 25 Stunden. Die Verbindung, bis eine der beiden Personen sie in der App entfernt oder ihr Konto löscht. Den Kontakteintrag in deinem Google-Konto verwaltest du selbst; wir löschen ihn nicht automatisch.</dd>
+      </dl>
+
+      <h2 id="b5-meeting">B5 &middot; Du findest einen Termin und legst ein Meeting an <a class="legal-tag" href="#c3-transfers">EU + Drittland</a></h2>
+      <p>Zwei Dinge nacheinander, die wir getrennt beschreiben.</p>
+
+      <h3 id="b5a-ai">Der KI-Vorschlag</h3>
+      <dl class="legal-fields">
+        <dt>Was wir verarbeiten</dt>
+        <dd>Den Satz, den du tippst (zum Beispiel „Freitagnachmittag nächste Woche“), dazu deine Zeitzone und die App-Sprache. <strong>Deinen Kalender, die Titel deiner Termine, deinen Namen und die Namen der eingeladenen Personen senden wir nicht an die KI.</strong> Außerdem zählen wir, wie viele Anfragen du im laufenden Monat gestellt hast.</dd>
+        <dt>Wozu</dt>
+        <dd>Um aus Alltagssprache konkrete Zeitfenster zu machen. Der Zähler dient dazu, die Grenzen des kostenlosen Zugangs anzuwenden.</dd>
+        <dt>Rechtsgrundlage</dt>
+        <dd>Art. 6 Abs. 1 lit. b DSGVO für die Umwandlung und den Zähler. Für die Protokollierung Art. 6 Abs. 1 lit. f DSGVO; unser berechtigtes Interesse ist, Fehldeutungen zu erkennen und die Trefferquote zu verbessern.</dd>
+        <dt>Empfänger</dt>
+        <dd>Google, als Anbieter des Modells Gemini. Wir nutzen einen kostenpflichtigen Zugang: Google verwendet die übermittelten Eingaben und Antworten nach seinen Bedingungen <strong>nicht</strong>, um seine eigenen Modelle zu trainieren.</dd>
+        <dt>Wie lange</dt>
+        <dd>Deine Anfrage und die erkannten Zeitfenster protokollieren wir für etwa 30 Tage, <strong>ohne deine Nutzer-ID</strong> &ndash; wir können sie dir also nicht zuordnen. Für Werbung nutzen wir das nicht, und wir bilden daraus kein Profil.</dd>
+      </dl>
+
+      <h3 id="b5b-meeting">Das Meeting</h3>
+      <dl class="legal-fields">
+        <dt>Was wir verarbeiten</dt>
+        <dd>Titel, Beschreibung, Beginn und Ende des Meetings sowie die Personen, die du einlädst, und deren Zu- oder Absage.</dd>
+        <dt>Wozu</dt>
+        <dd>Um das Meeting anzulegen, es den eingeladenen Personen anzuzeigen und es nach einer Zusage in die verbundenen Kalender zu schreiben. Dabei werden Titel, Beschreibung, Zeiten und die E-Mail-Adressen der Teilnehmenden an Google, Outlook oder iCloud übertragen &ndash; so wie bei jeder Kalendereinladung.</dd>
+        <dt>Rechtsgrundlage</dt>
+        <dd>Art. 6 Abs. 1 lit. b DSGVO. Schreibst du <strong>besondere Kategorien</strong> personenbezogener Daten in Titel oder Beschreibung &ndash; etwa „Reha“ oder einen Gottesdienst &ndash; verarbeiten wir diese auf Grundlage deiner ausdrücklichen Einwilligung nach Art. 9 Abs. 2 lit. a DSGVO, die du mit der freiwilligen Eingabe erteilst. Wir empfehlen, solche Angaben wegzulassen; ein neutraler Titel genügt.</dd>
+        <dt>Empfänger</dt>
+        <dd>Die Kalenderanbieter der Teilnehmenden (Google, Microsoft, Apple) sowie die eingeladenen Personen selbst.</dd>
+        <dt>Wie lange</dt>
+        <dd>Bis etwa 21 Tage nach Ende des Meetings, danach löschen wir es automatisch.</dd>
+      </dl>
+      <p><strong>Wichtig:</strong> Löschst du ein Meeting in CalendAIr, trennst einen Kalender oder löschst dein Konto, werden bereits geschriebene Termine bei Google, Outlook oder iCloud <strong>nicht</strong> entfernt. Diese Kopien bleiben dort, bis du oder die organisierende Person sie im jeweiligen Kalender löschen.</p>
+
+      <h2 id="b6-notifications">B6 &middot; Du erhältst Benachrichtigungen <a class="legal-tag" href="#c3-transfers">EU + Drittland</a></h2>
+      <dl class="legal-fields">
+        <dt>Was wir verarbeiten</dt>
+        <dd>Eine Gerätekennung für Push-Nachrichten, die Plattform und deine Sprache. Die Benachrichtigung selbst kann den <strong>Titel eines Meetings und Namen</strong> enthalten &ndash; und erscheint damit unter Umständen auf deinem Sperrbildschirm.</dd>
+        <dt>Wozu</dt>
+        <dd>Um dich über neue Meeting-Anfragen, Zu- und Absagen sowie neue Verbindungen zu informieren.</dd>
+        <dt>Rechtsgrundlage</dt>
+        <dd>Art. 6 Abs. 1 lit. b DSGVO, weil die Benachrichtigung über eine Terminanfrage Teil des Dienstes ist. Die Systemberechtigung dafür erteilst du deinem Betriebssystem.</dd>
+        <dt>Empfänger</dt>
+        <dd>Google (Firebase Cloud Messaging) und, auf iPhones, Apple (Push-Dienst).</dd>
+        <dt>Wie lange</dt>
+        <dd>Die Gerätekennung, bis du dich abmeldest, die App löschst oder dein Konto löschst.</dd>
+      </dl>
+
+      <h2 id="b7-premium">B7 &middot; Du kaufst Premium <a class="legal-tag" href="#c3-transfers">EU + Drittland</a></h2>
+      <dl class="legal-fields">
+        <dt>Was wir verarbeiten</dt>
+        <dd>Ob du Premium hast, bis wann, über welchen Store, und die Kennungen des Kaufvorgangs, die App Store und Google Play für die Prüfung und Wiederherstellung brauchen. <strong>Zahlungsdaten sehen wir nicht</strong> &ndash; keine Kartennummer, keine Rechnungsadresse.</dd>
+        <dt>Wozu</dt>
+        <dd>Um zu prüfen, dass der Kauf gültig ist, Premium freizuschalten und es bei einem Gerätewechsel wiederherzustellen.</dd>
+        <dt>Rechtsgrundlage</dt>
+        <dd>Art. 6 Abs. 1 lit. b DSGVO für die Freischaltung, Art. 6 Abs. 1 lit. c DSGVO, soweit wir Vorgänge steuerlich dokumentieren müssen.</dd>
+        <dt>Empfänger</dt>
+        <dd>Apple und Google als Betreiber der Stores. Beide senden uns außerdem <strong>von sich aus</strong> Mitteilungen, wenn sich ein Abo ändert &ndash; etwa bei Verlängerung, Kündigung oder Erstattung. Diese Angaben erheben wir also nicht bei dir, sondern erhalten sie vom jeweiligen Store.</dd>
+        <dt>Wie lange</dt>
+        <dd>Solange das Abo läuft, danach bis zum Ablauf der handels- und steuerrechtlichen Aufbewahrungsfristen.</dd>
+      </dl>
+
+      <h2 id="b8-ads">B8 &middot; Du siehst Werbung in der kostenlosen Version <a class="legal-tag" href="#c3-transfers">EU + Drittland</a></h2>
+      <dl class="legal-fields">
+        <dt>Was wir verarbeiten</dt>
+        <dd>Die Werbe-Kennung deines Geräts (IDFA auf iPhones, Werbe-ID auf Android), technische Angaben zur Anzeigenanfrage und deine Einwilligungsentscheidung. <strong>Kalender- und Meeting-Inhalte gehen nie an Werbedienste.</strong></dd>
+        <dt>Wozu</dt>
+        <dd>Um die kostenlose Version zu finanzieren und Anzeigen auszuliefern &ndash; personalisiert nur, wenn du das erlaubst.</dd>
+        <dt>Rechtsgrundlage</dt>
+        <dd>§ 25 Abs. 1 TDDDG und Art. 6 Abs. 1 lit. a DSGVO &ndash; deine Einwilligung. Auf iPhones fragen wir zusätzlich über Apples Dialog zur App-Tracking-Transparenz. Du kannst deine Entscheidung jederzeit in den App-Einstellungen ändern.</dd>
+        <dt>Empfänger</dt>
+        <dd>Google (AdMob und die dort eingebundenen Werbepartner).</dd>
+        <dt>Wie lange</dt>
+        <dd>Nach den Fristen von Google; deine Einwilligungsentscheidung speichern wir auf deinem Gerät, bis du sie änderst.</dd>
+        <dt>Musst du das bereitstellen?</dt>
+        <dd>Nein. Willigst du nicht ein, siehst du <strong>nicht personalisierte</strong> Werbung und die App bleibt vollständig nutzbar. Mit Premium entfällt die Werbung ganz.</dd>
+      </dl>
+
+      <h2 id="b9-contact">B9 &middot; Du schreibst uns <span class="legal-tag">EU</span></h2>
+      <dl class="legal-fields">
+        <dt>Was wir verarbeiten</dt>
+        <dd>Über das Formular in der App: Kategorie, dein Text und deine Nutzer-ID. Per E-Mail: deine Absenderadresse und der Inhalt deiner Nachricht. Bitte nenne uns keine Daten anderer Personen, die für die Bearbeitung nicht nötig sind.</dd>
+        <dt>Rechtsgrundlage</dt>
+        <dd>Art. 6 Abs. 1 lit. b DSGVO, wenn es um deinen Vertrag geht, sonst lit. f mit unserem berechtigten Interesse an funktionierender Unterstützung. Machst du Rechte aus Teil C geltend, lit. c, weil wir zur Beantwortung verpflichtet sind.</dd>
+        <dt>Empfänger</dt>
+        <dd>Das Formular bleibt auf unserer eigenen Infrastruktur. E-Mails laufen zusätzlich über den Anbieter unseres Postfachs.</dd>
+        <dt>Wie lange</dt>
+        <dd>Formular-Rückmeldungen etwa sechs Monate. E-Mails, bis dein Anliegen erledigt ist, danach im Rahmen gesetzlicher Aufbewahrungsfristen.</dd>
+      </dl>
+
+      <h2 id="b10-delete">B10 &middot; Du löschst dein Konto <span class="legal-tag">EU</span></h2>
+      <p>Du kannst dein Konto in der App unter „Profil“ löschen oder die Löschung ohne App über die Seite <a href="/de/konto-loeschen.html">Konto löschen</a> verlangen.</p>
+      <dl class="legal-fields">
+        <dt>Was passiert</dt>
+        <dd>Dein Profil wird sofort anonymisiert: Name, E-Mail-Adresse, Profilbild und Anbieter-Kennung werden überschrieben. Deine Kalender-Zugangsdaten entfernen wir sofort vollständig, unser Zugriff auf deinen Kalender endet damit augenblicklich. Deine Verbindungen und Push-Kennungen werden zur Löschung vorgemerkt.</dd>
+        <dt>Rechtsgrundlage</dt>
+        <dd>Art. 17 DSGVO und Art. 6 Abs. 1 lit. c DSGVO.</dd>
+        <dt>Wie lange</dt>
+        <dd>Der anonymisierte Datensatz wird nach etwa 90 Tagen endgültig entfernt. Meetings, die du angelegt hast, bleiben für die anderen Teilnehmenden sichtbar, bis sie ablaufen &ndash; längstens 90 Tage.</dd>
+        <dt>Dein Anmeldedatensatz</dt>
+        <dd>Deine Anmeldung wird sofort deaktiviert, niemand kann sich mehr als du einloggen. Der Eintrag selbst mit E-Mail-Adresse und Anbieter-Kennung wird zusammen mit den übrigen Kontodaten gelöscht.</dd>
+        <dt>Was wir nicht löschen können</dt>
+        <dd>Termine, die bereits in Google, Outlook oder iCloud geschrieben wurden, und ein laufendes Abo. Beides musst du im jeweiligen Kalender bzw. im Store selbst beenden.</dd>
+      </dl>
+      <a class="legal-top" href="#top">&uarr; Nach oben</a>
+
+      <h2 id="c1-website">C1 &middot; Die Website calendair.de <a class="legal-tag" href="#c3-transfers">EU + Drittland</a></h2>
+      <dl class="legal-fields">
+        <dt>Was wir verarbeiten</dt>
+        <dd>Beim Aufruf der Seiten verarbeitet unser Hoster deine IP-Adresse, Datum und Uhrzeit, die aufgerufene Adresse und technische Angaben deines Browsers in Server-Protokollen.</dd>
+        <dt>Wozu</dt>
+        <dd>Um die Seiten auszuliefern und Angriffe abzuwehren.</dd>
+        <dt>Rechtsgrundlage</dt>
+        <dd>Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse ist der sichere und stabile Betrieb der Website.</dd>
+        <dt>Empfänger</dt>
+        <dd>GitHub, Inc. (GitHub Pages).</dd>
+        <dt>Wie lange</dt>
+        <dd>Nach den Fristen von GitHub.</dd>
+        <dt>Cookies und Drittinhalte</dt>
+        <dd><strong>Keine.</strong> Die Website setzt keine Cookies, weder eigene noch fremde, und bindet keine Inhalte von Drittanbietern ein. Schriften, Symbole und alle übrigen Dateien liefern wir von unserer eigenen Domain aus. Es gibt daher auch kein Einwilligungsbanner.</dd>
+      </dl>
+
+      <h2 id="c2-recipients">C2 &middot; Empfänger im Überblick</h2>
+      <p>Wir setzen andere Unternehmen ein, um CalendAIr zu betreiben. Sie verarbeiten Daten nach unserer Weisung als Auftragsverarbeiter oder &ndash; bei Anmeldung, Stores und Werbung &ndash; in eigener Verantwortung für ihre Plattform.</p>
+      <dl class="legal-fields">
+        <dt>Amazon Web Services</dt>
+        <dd>Hosting, Datenbank, Anmeldedienst, Protokolle. Auftragsverarbeiter. Ort: Frankfurt am Main. Betrifft alle Schritte in Teil B.</dd>
+        <dt>Google</dt>
+        <dd>Anmeldung, Google Kalender und Kontakte, das KI-Modell Gemini, Firebase (Absturzberichte, Analyse, Push), AdMob und Google-Play-Abrechnung. Teils Auftragsverarbeiter, teils eigener Verantwortlicher. Betrifft <a href="#b1-install">B1</a> bis <a href="#b8-ads">B8</a>.</dd>
+        <dt>Anbieter unseres E-Mail-Postfachs</dt>
+        <dd>Empfang und Versand der Nachrichten an unsere Kontaktadressen. Auftragsverarbeiter. Betrifft <a href="#b9-contact">B9</a>.</dd>
+        <dt>Apple</dt>
+        <dd>Anmeldung mit Apple, iCloud-Kalender, Push-Zustellung, App-Store-Abrechnung und Abo-Mitteilungen. Eigener Verantwortlicher für seine Plattform. Betrifft <a href="#b2-account">B2</a>, <a href="#b3-calendar">B3</a>, <a href="#b6-notifications">B6</a>, <a href="#b7-premium">B7</a>.</dd>
+        <dt>Microsoft</dt>
+        <dd>Outlook-Kalender über Microsoft Graph. Betrifft <a href="#b3-calendar">B3</a> und <a href="#b5-meeting">B5</a>.</dd>
+        <dt>GitHub</dt>
+        <dd>Hosting der Website calendair.de &ndash; nicht der App und nicht deiner Kontodaten. Betrifft <a href="#c1-website">C1</a> und <a href="#b0-invited">B0</a>.</dd>
+      </dl>
+      <p><strong>Wir verkaufen keine personenbezogenen Daten.</strong> Darüber hinaus geben wir Daten nur weiter, wenn wir gesetzlich dazu verpflichtet sind.</p>
+
+      <h2 id="c3-transfers">C3 &middot; Verarbeitung außerhalb der EU</h2>
+      <p>Unsere eigene Infrastruktur steht in der EU. Google, Apple und Microsoft können Daten in den <strong>Vereinigten Staaten</strong> oder anderen Ländern verarbeiten. Soweit erforderlich, stützen wir uns auf einen Angemessenheitsbeschluss der Europäischen Kommission &ndash; einschließlich des EU-US Data Privacy Framework, soweit der Anbieter dort zertifiziert ist &ndash; sowie auf die EU-Standardvertragsklauseln und ergänzende Schutzmaßnahmen.</p>
+      <p>Eine Kopie der jeweiligen Garantien stellen wir dir auf Anfrage zur Verfügung. Schreib dafür an <a href="mailto:support@calendair.de">support@calendair.de</a>.</p>
+
+      <h2 id="c4-google-limited-use">C4 &middot; Google API Services User Data Policy (Limited Use)</h2>
+      <p lang="en">The use of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" lang="en">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
       <p>Insbesondere:</p>
       <ul>
-        <li>Google-Nutzerdaten nutzen wir nur, um sichtbare CalendAIr-Funktionen bereitzustellen und zu verbessern (Verfügbarkeit, Anlegen/Aktualisieren von CalendAIr-Meetings in deinem Kalender sowie die oben beschriebene Kontaktgruppe).</li>
+        <li>Google-Nutzerdaten nutzen wir nur, um sichtbare CalendAIr-Funktionen bereitzustellen und zu verbessern: die Berechnung freier Zeiten (<a href="#b3-calendar">B3</a>), das Anlegen und Aktualisieren von CalendAIr-Meetings in deinem Kalender (<a href="#b5-meeting">B5</a>) und die Kontaktgruppe (<a href="#b4-friends">B4</a>).</li>
         <li>Wir nutzen Daten aus Google Kalender oder Google Kontakte nicht, um Werbung auszuspielen.</li>
         <li>Wir verkaufen diese Daten nicht.</li>
         <li>Menschen dürfen sie nicht lesen, außer du willigst ausdrücklich ein, es ist für Sicherheit oder zur Erfüllung von Gesetzen nötig, oder die Nutzung beschränkt sich auf interne Abläufe wie Fehlersuche (aggregiert oder soweit nötig, um ein von dir gemeldetes Problem zu beheben).</li>
       </ul>
-      <p>Die Nutzung von Microsoft-Graph-Daten folgt den <a href="https://docs.microsoft.com/en-us/legal/microsoft-apis/terms-of-use">Microsoft APIs Terms of Use</a> und beschränkt sich auf die in dieser Erklärung beschriebenen Outlook-Kalenderfunktionen.</p>
+      <p>Die Nutzung von Microsoft-Graph-Daten folgt den <a href="https://docs.microsoft.com/en-us/legal/microsoft-apis/terms-of-use">Microsoft APIs Terms of Use</a> und beschränkt sich auf die in <a href="#b3-calendar">B3</a> und <a href="#b5-meeting">B5</a> beschriebenen Outlook-Funktionen.</p>
 
-      <h2 id="empfaenger">7. Empfänger (Auftragsverarbeiter / Anbieter)</h2>
-      <p>Wir setzen andere Unternehmen ein, um das Produkt zu betreiben. Sie verarbeiten Daten nach unserer Weisung oder als eigene Verantwortliche für ihre Plattformen (Login, Stores, Werbung):</p>
-      <ul>
-        <li><strong>Amazon Web Services</strong>: Hosting, Datenbank, Authentifizierung (Cognito), Protokolle (überwiegend EU, Deutschland).</li>
-        <li><strong>Google</strong>: Anmeldung, Calendar- und Contacts-APIs, Gemini, Firebase (Analytics, Crashlytics, Cloud Messaging), AdMob, Google-Play-Abrechnung.</li>
-        <li><strong>Apple</strong>: Sign in with Apple, iCloud-Kalender (CalDAV), App-Store-Abrechnung und Abo-Mitteilungen.</li>
-        <li><strong>Microsoft</strong>: Outlook / Microsoft Graph für den Kalender.</li>
-        <li><strong>GitHub</strong>: Hosting der Website calendair.de (nicht der App und nicht deiner Daten).</li>
-      </ul>
-      <p>Wir verkaufen deine personenbezogenen Daten nicht.</p>
+      <h2 id="c5-logs">C5 &middot; Betriebs- und Sicherheitsprotokolle</h2>
+      <dl class="legal-fields">
+        <dt>Was wir verarbeiten</dt>
+        <dd>Technische Protokolle über alle Schritte hinweg: Fehlermeldungen, Nutzer-ID, Zeitstempel, aufgerufene Funktion. <strong>Kalenderinhalte, Meeting-Titel, Zugangsdaten und Passwörter protokollieren wir nicht.</strong> Der einzige Inhalt, den wir protokollieren, ist die Terminanfrage aus <a href="#b5-meeting">B5</a>.</dd>
+        <dt>Wozu</dt>
+        <dd>Um den Dienst zu betreiben, abzusichern, Störungen zu finden und Missbrauch abzuwehren.</dd>
+        <dt>Rechtsgrundlage</dt>
+        <dd>Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse ist ein lauffähiger und sicherer Dienst. Du kannst widersprechen &ndash; siehe <a href="#c7-objection">C7</a>.</dd>
+        <dt>Wie lange</dt>
+        <dd>Etwa 30 Tage. Wir bilden daraus kein Profil von dir.</dd>
+      </dl>
 
-      <h2 id="uebermittlungen">8. Übermittlungen außerhalb des EWR</h2>
-      <p>Unsere eigene Infrastruktur steht überwiegend in der EU. Google, Apple, Microsoft und einzelne AWS-Funktionen können Daten in den USA oder anderen Ländern verarbeiten. Soweit erforderlich, stützen wir uns auf die EU-Standardvertragsklauseln, einen Angemessenheitsbeschluss (einschließlich EU-US Data Privacy Framework, soweit ein Anbieter zertifiziert ist) und vergleichbare Garantien.</p>
+      <h2 id="c6-security">C6 &middot; Sicherheit</h2>
+      <p>Die Verbindung zwischen App und unseren Servern ist während der Übertragung verschlüsselt (TLS). Unsere Datenbanken stehen in der EU und sind im Ruhezustand verschlüsselt. Kalender-Zugangsdaten erhalten vor der Speicherung eine zusätzliche Verschlüsselung. Den Zugriff auf Produktivsysteme beschränken wir auf die Personen, die ihn für den Betrieb brauchen.</p>
+      <p>Ein absolut sicheres System gibt es nicht. Sollte eine Verletzung des Schutzes deiner Daten dich betreffen, informieren wir dich nach Art. 33 und 34 DSGVO.</p>
 
-      <h2 id="speicherdauer">9. Speicherdauer</h2>
-      <p>Wir speichern Daten nur so lange, wie es für die genannten Zwecke nötig ist, und löschen oder anonymisieren sie danach.</p>
-      <p>Typische Fristen im Produkt heute:</p>
-      <ul>
-        <li><strong>Konto</strong> nach Löschung in der App: etwa <strong>90 Tage</strong> (anonymisiert, dann entfernt). Die Anmeldung bei Cognito wird deaktiviert.</li>
-        <li><strong>CalendAIr-Meetings:</strong> bis etwa <strong>21 Tage nach Meeting-Ende</strong>.</li>
-        <li><strong>Einladungscodes:</strong> etwa <strong>25 Stunden</strong>.</li>
-        <li><strong>Feedback:</strong> etwa <strong>6 Monate</strong>.</li>
-        <li><strong>Betriebsprotokolle</strong> (einschließlich der KI-Anfragen aus Ziffer 4): etwa <strong>30 Tage</strong>; wir bilden daraus kein Profil von dir.</li>
-        <li><strong>Anmeldedatensatz:</strong> Nach der Kontolöschung ist die Anmeldung sofort deaktiviert, niemand kann sich mehr als du einloggen. Der verbliebene Anmeldeeintrag (E-Mail-Adresse und Anbieter-ID) wird zusammen mit den Kontodaten entfernt.</li>
-      </ul>
-      <p>Meetings, die du angelegt hast, können für andere Teilnehmende noch sichtbar sein, bis diese Fristen ablaufen, auch wenn du dein Konto löschst. Termine, die bereits in Google, Outlook oder iCloud liegen, bleiben dort, bis du sie in diesem Kalender löschst.</p>
+      <h2 id="c7-objection">C7 &middot; Dein Widerspruchsrecht</h2>
+      <div class="legal-callout">
+        <p><strong>Du hast das Recht, jederzeit gegen Verarbeitungen zu widersprechen, die wir auf ein berechtigtes Interesse stützen (Art. 21 Abs. 1 DSGVO)</strong> &ndash; aus Gründen, die sich aus deiner besonderen Situation ergeben. Widersprichst du, verarbeiten wir diese Daten nicht mehr, es sei denn, wir können zwingende schutzwürdige Gründe nachweisen, die deine Interessen überwiegen, oder die Verarbeitung dient der Geltendmachung oder Verteidigung von Rechtsansprüchen.</p>
+        <p>Auf ein berechtigtes Interesse stützen wir derzeit die Betriebs- und Sicherheitsprotokolle (<a href="#c5-logs">C5</a>), den Einladungslink (<a href="#b0-invited">B0</a>) und die Bearbeitung allgemeiner Anfragen (<a href="#b9-contact">B9</a>).</p>
+        <p>Für deinen Widerspruch genügt eine formlose Nachricht an <a href="mailto:support@calendair.de">support@calendair.de</a>. Eine Begründung hilft uns bei der Abwägung, ist aber keine Voraussetzung.</p>
+      </div>
 
-      <h2 id="rechte">10. Deine Rechte</h2>
-      <p>Du kannst <strong>Auskunft</strong>, <strong>Berichtigung</strong>, <strong>Löschung</strong>, <strong>Einschränkung</strong> und <strong>Datenübertragbarkeit</strong> verlangen und der Verarbeitung auf Grundlage berechtigter Interessen <strong>widersprechen</strong>. Eine <strong>Einwilligung</strong> kannst du jederzeit widerrufen.</p>
-      <p><strong>In der App:</strong> Kalender trennen; Konto unter „Profil“ löschen. Du kannst die Löschung auch ohne App verlangen &ndash; siehe <a href="/de/konto-loeschen.html">Konto löschen</a>.</p>
+      <h2 id="c8-rights">C8 &middot; Deine weiteren Rechte</h2>
+      <p>Du kannst <strong>Auskunft</strong> über deine Daten verlangen (Art. 15), ihre <strong>Berichtigung</strong> (Art. 16), ihre <strong>Löschung</strong> (Art. 17), die <strong>Einschränkung</strong> der Verarbeitung (Art. 18) und die <strong>Übertragung</strong> in einem gängigen Format (Art. 20). Eine <strong>Einwilligung</strong> kannst du jederzeit mit Wirkung für die Zukunft widerrufen (Art. 7 Abs. 3).</p>
+      <p><strong>In der App:</strong> Kalender trennen, Einwilligungen ändern, Konto löschen. <strong>Ohne App:</strong> über <a href="/de/konto-loeschen.html">Konto löschen</a> oder per E-Mail an <a href="mailto:support@calendair.de">support@calendair.de</a>. Einen automatischen Datenexport bieten wir derzeit nicht an; Auskunftsanfragen bearbeiten wir von Hand. Um sicherzugehen, dass wir Daten nicht an Unbefugte herausgeben, fragen wir dabei gegebenenfalls eine Angabe zur Zuordnung nach &ndash; mehr als nötig verlangen wir nicht.</p>
+      <p>Unabhängig davon kannst du dich bei einer <strong>Aufsichtsbehörde beschweren</strong> (Art. 77). Zuständig ist für uns die LDI NRW, siehe <a href="#a1-controller">A1</a>; du kannst dich auch an die Behörde deines Wohnsitzlandes wenden.</p>
 
-      <p><strong>Per E-Mail:</strong> <a href="mailto:support@calendair.de">support@calendair.de</a>. Einen vollständigen automatischen Datenexport bieten wir derzeit nicht; Auskunftsanfragen bearbeiten wir manuell.</p>
-      <p>Du kannst dich bei einer Aufsichtsbehörde beschweren. Für unseren Sitz in Nordrhein-Westfalen ist das die <strong>Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen (LDI NRW)</strong>. Du kannst dich auch an die Behörde deines Wohnsitzlandes wenden.</p>
-
-      <h2 id="automatisierte-entscheidungen">11. Automatisierte Entscheidungen</h2>
+      <h2 id="c9-automated">C9 &middot; Keine automatisierten Entscheidungen</h2>
       <p>Eine automatisierte Entscheidungsfindung oder ein Profiling mit rechtlicher Wirkung oder ähnlich erheblicher Beeinträchtigung für dich (Art. 22 DSGVO) findet nicht statt. Die KI übersetzt nur deinen Text in Zeitfenster; welchen Termin du nimmst, entscheidest immer du.</p>
 
-      <h2 id="sicherheit">12. Sicherheit</h2>
-      <p>Die Verbindung zwischen App und unseren Servern ist während der Übertragung verschlüsselt (TLS). Unsere Datenbanken stehen in der EU (AWS, Frankfurt) und sind im Ruhezustand verschlüsselt. Kalender-Refresh-Tokens und iCloud-App-Passwörter erhalten vor der Speicherung eine zusätzliche Verschlüsselung. Ein absolut sicheres System gibt es nicht; sollte eine Verletzung des Schutzes deiner Daten dich betreffen, informieren wir dich nach Art. 33 und 34 DSGVO.</p>
-
-      <h2 id="kinder">13. Kinder</h2>
+      <h2 id="c10-children">C10 &middot; Kinder und Jugendliche</h2>
       <p>CalendAIr richtet sich nicht an Kinder unter 16 Jahren. Wir erheben wissentlich keine personenbezogenen Daten von Kindern unter 16 Jahren. Wenn du meinst, dass ein Kind uns personenbezogene Daten gegeben hat, schreib an <a href="mailto:support@calendair.de">support@calendair.de</a> &ndash; wir löschen sie.</p>
 
-      <h2 id="aenderungen">14. Änderungen</h2>
-      <p>Wir können diese Erklärung anpassen. Wir ändern das Datum oben und informieren dich bei wesentlichen Änderungen in der App oder auf der Website.</p>
+      <h2 id="c11-changes">C11 &middot; Änderungen dieser Hinweise</h2>
+      <p>Wir passen diese Hinweise an, wenn sich die App oder die Rechtslage ändert. Maßgeblich ist immer die hier veröffentlichte Fassung; das Datum oben zeigt den Stand. Über wesentliche Änderungen informieren wir dich in der App oder auf der Website.</p>
+      <p>Sollten wir deine Daten einmal für einen anderen Zweck verarbeiten wollen als den, für den wir sie erhoben haben, informieren wir dich vorher darüber und über die Rechtsgrundlage (Art. 13 Abs. 3 DSGVO).</p>
 
-      <h2 id="kontakt">15. Kontakt</h2>
-
+      <h2 id="c12-contact">C12 &middot; Kontakt</h2>
       <address>
         CalendAIr H.I. UG (haftungsbeschränkt)<br>
         <a href="mailto:support@calendair.de">support@calendair.de</a>
       </address>
+      <a class="legal-top" href="#top">&uarr; Nach oben</a>
     </section>
   </main>
 
