@@ -1,33 +1,38 @@
-// Invite landing: read the invite code, show the matching store badge(s).
-// The inviter's name is deliberately not read or displayed: it would travel in
-// the URL and end up in the host's access logs. See the privacy policy, B0.
+// Invite landing: read ?code= and #from=, show the matching store badge(s).
+// The display name lives only in the fragment, so it never reaches the host.
 (function () {
   var PLAY =
     "https://play.google.com/store/apps/details?id=com.calendair.calendair_app";
   var APP_STORE = "https://apps.apple.com/app/id6755298945";
 
-  // Read from the URL fragment first, falling back to the query string.
-  // A fragment is never sent to the server, so it keeps the inviter's first
-  // name out of the host's access logs. The app still builds query links
-  // today; this accepts both so the app can switch without a site change.
-  var hash = (window.location.hash || "").replace(/^#/, "");
-  var fragmentParams = new URLSearchParams(hash);
   var queryParams = new URLSearchParams(window.location.search);
+  var fragmentParams = new URLSearchParams(
+    (window.location.hash || "").replace(/^#/, "")
+  );
 
-  function param(name) {
-    return (fragmentParams.get(name) || queryParams.get(name) || "").trim();
-  }
-
-  var code = param("code").toUpperCase();
+  var code = (queryParams.get("code") || "").trim().toUpperCase();
+  var from = (fragmentParams.get("from") || "").trim();
 
   var ok = document.getElementById("invite-ok");
   var missing = document.getElementById("invite-missing");
   var codeEl = document.getElementById("invite-code");
+  var fromEl = document.getElementById("invite-from");
 
   if (code) {
     if (ok) ok.hidden = false;
     if (missing) missing.hidden = true;
     if (codeEl) codeEl.textContent = code;
+    if (fromEl) {
+      if (from) {
+        var template =
+          fromEl.getAttribute("data-from-template") ||
+          "{from} wants to connect with you.";
+        fromEl.textContent = template.replace("{from}", from);
+        fromEl.hidden = false;
+      } else {
+        fromEl.hidden = true;
+      }
+    }
   } else {
     if (ok) ok.hidden = true;
     if (missing) missing.hidden = false;
@@ -50,11 +55,20 @@
     }
   });
 
-  // Carry only the code on to the language-switch links - rebuilt, not passed
-  // through, so any extra parameters (such as an inviter name from an older
-  // link) are dropped rather than travelling on.
-  var carry = code ? "#code=" + encodeURIComponent(code) : "";
+  // Language switch: rebuild with ?code= only. Never write `from` into the
+  // href (or any other request). Keep #from= by appending it on navigation.
+  var query = code ? "?code=" + encodeURIComponent(code) : "";
+  var fromHash = from ? "#from=" + encodeURIComponent(from) : "";
+
   document.querySelectorAll("[data-invite-path]").forEach(function (el) {
-    el.setAttribute("href", el.getAttribute("data-invite-path") + carry);
+    var path = el.getAttribute("data-invite-path");
+    el.setAttribute("href", path + query);
+    if (!fromHash) return;
+    el.addEventListener("click", function (e) {
+      if (e.defaultPrevented || e.button !== 0) return;
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      e.preventDefault();
+      window.location.assign(path + query + fromHash);
+    });
   });
 })();

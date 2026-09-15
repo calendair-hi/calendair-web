@@ -1471,6 +1471,12 @@ footer {
   display: block;
 }
 
+.invite-from {
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 1.02rem;
+  margin: 0 0 1.75rem;
+}
 
 .invite-code-block {
   margin: 0 auto 1.75rem;
