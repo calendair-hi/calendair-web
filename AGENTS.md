@@ -106,8 +106,9 @@ must not overstate them. Several claims were wrong and have been fixed; do not r
 -   ❌ *"only ever asks for free/busy times"*: the policy says event data **is** requested from the
     provider's API and processed in memory; only the *storing* of titles, locations, notes and attendee
     lists is ruled out. Say "we read when your events start and end", not "we only get free/busy".
--   ❌ *"No tracking"* as a blanket claim: Firebase Analytics, Crashlytics and AdMob run in the app
-    with consent. Only the **website** embeds no third-party content.
+-   ❌ *"No tracking"* as a blanket claim: Firebase Analytics and personalised AdMob ads run in the
+    app with consent; Crashlytics runs without consent (§ 25(2)(2) TDDDG + legitimate interest,
+    privacy policy B1). Only the **website** embeds no third-party content.
 -   ❌ *"event details are never stored"*: meetings the user creates in CalendAIr **are** stored
     (title, description, invitees). Only the content of their pre-existing events is not. The hero
     eyebrow just says "GDPR-compliant", which needs no asterisk.
@@ -167,6 +168,11 @@ grep -rn $'\u2014\|&mdash;' --include='*.html' .
     for, legal basis, recipients, how long, do you have to provide it) and Part C (general).
     When a feature changes, update the matching B-step - and keep DE and EN structurally identical:
     same section IDs, same number of `<h2>`, `<dt>`, `<dd>`, `<p>` and `<li>` elements.
+11. **Legal texts promise only what the system can prove**: no "sofort", "nie", "niemals",
+    "vollständig", "in diesem Moment" (EN: "immediately", "never", "at that moment"). Deletion is
+    "unverzüglich" / "without undue delay". Database backups (PITR, 14 days) are described once in
+    C6. Cite articles only where they carry the legal basis (Part B, C7-C9, § 25 TDDDG in B1/B8);
+    no decorative citations. Cross-reference sections by name or anchor, never "Ziffer 5".
 
 ---
 *Created by Antigravity AI*
