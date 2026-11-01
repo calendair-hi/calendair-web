@@ -173,6 +173,15 @@ grep -rn $'\u2014\|&mdash;' --include='*.html' .
     "unverzüglich" / "without undue delay". Database backups (PITR, 14 days) are described once in
     C6. Cite articles only where they carry the legal basis (Part B, C7-C9, § 25 TDDDG in B1/B8);
     no decorative citations. Cross-reference sections by name or anchor, never "Ziffer 5".
+12. **Legal text versions live in `legal/versions.json`**: the app reads it on start (cached 24 h) and
+    asks for consent when `terms.version` is newer than what the user accepted, or shows a one-time
+    notice when `privacy.version` is newer than what the user has seen. A **material change** (privacy:
+    new data categories, recipients, third countries, legal bases, longer retention, new purposes;
+    terms: anything that changes rights or obligations) bumps the version, updates `date` and replaces
+    `summary_de` / `summary_en` (2-3 short points, "du" form in German, no em dashes) **in the same
+    commit** as the text change. A typo fix only changes the "Stand" date on the page, not the version.
+    Never lower a version. Keep the file valid JSON: the app ignores a broken file, so nobody would
+    be asked.
 
 ---
-*Created by Antigravity AI*
+*Created by AI*
