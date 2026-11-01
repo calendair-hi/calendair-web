@@ -168,6 +168,8 @@ grep -rn $'\u2014\|&mdash;' --include='*.html' .
     for, legal basis, recipients, how long, do you have to provide it) and Part C (general).
     When a feature changes, update the matching B-step - and keep DE and EN structurally identical:
     same section IDs, same number of `<h2>`, `<dt>`, `<dd>`, `<p>` and `<li>` elements.
+    Every processing whose legal basis is Art. 6(1)(f) must also appear in the list in **C7**
+    (right to object), in both languages.
 11. **Legal texts promise only what the system can prove**: no "sofort", "nie", "niemals",
     "vollständig", "in diesem Moment" (EN: "immediately", "never", "at that moment"). Deletion is
     "unverzüglich" / "without undue delay". Database backups (PITR, 14 days) are described once in
