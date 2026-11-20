@@ -12,15 +12,15 @@
     ]
   },
   "privacy": {
-    "version": 1,
-    "date": "2026-11-01",
+    "version": 2,
+    "date": "2026-11-20",
     "summary_de": [
-      "Wir speichern, welche Fassung der Nutzungsbedingungen du akzeptiert hast und wann.",
-      "Die App lädt beim Start eine kleine Datei von calendair.de, um zu prüfen, ob sich unsere Rechtstexte geändert haben."
+      "Für nicht personalisierte Werbung und die Messung von Anzeigen stützen sich Google und einige Werbepartner auf ein berechtigtes Interesse. Widersprechen kannst du im Einwilligungsdialog in den App-Einstellungen.",
+      "Welche Werbepartner beteiligt sind, siehst du im Einwilligungsdialog."
     ],
     "summary_en": [
-      "We store which version of the terms you accepted and when.",
-      "On start, the app loads a small file from calendair.de to check whether our legal texts have changed."
+      "Google and some advertising partners rely on a legitimate interest for non-personalised ads and ad measurement. You can object in the consent dialog in the app settings.",
+      "The consent dialog lists which advertising partners are involved."
     ]
   }
 }
